@@ -1,0 +1,26 @@
+link1: 0.0
+link2: 0.203
+link3: 0.203
+link4: 0.05
+link5: 0.15
+link6: 0.1
+
+joints: 0.03
+joint1: 
+  up: 1.62
+  down: -1.62
+joint2: 
+  up: 2.182
+  down: -0.96
+joint3: 
+  up: 2.182
+  down: -0.96
+joint4: 
+  up: 3.14
+  down: -3.14
+joint5: 
+  up: 2.2
+  down: -2.2
+joint6: 
+  up: 0.1
+  down: 0

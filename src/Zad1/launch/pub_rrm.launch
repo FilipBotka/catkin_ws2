@@ -1,0 +1,10 @@
+
+<launch>
+    <rosparam command="load" file="$(find Zad1)/config/params.yaml"/>
+
+    <node pkg="Zad1" type="pub_node" name="node1"/>
+    <node pkg="Zad1" type="trans_node" name="node2"/>
+    
+    <include file="$(find rrm_simple_robot_model)/launch/robot_state_publisher.launch"/>
+
+</launch>

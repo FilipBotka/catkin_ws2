@@ -1,0 +1,8 @@
+prefix=/home/filip/catkin_ws2/src/build/devel
+
+Name: rrm_simple_robot_model
+Description: Description of rrm_simple_robot_model
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

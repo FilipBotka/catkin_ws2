@@ -1,0 +1,8 @@
+prefix=/home/filip/catkin_ws2/devel
+
+Name: tf_broadcaster_example
+Description: Description of tf_broadcaster_example
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/filip/catkin_ws2/devel
+
+Name: acceptance_test_rrm_1
+Description: Description of acceptance_test_rrm_1
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

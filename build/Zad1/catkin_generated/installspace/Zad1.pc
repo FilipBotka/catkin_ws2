@@ -1,0 +1,8 @@
+prefix=/home/filip/catkin_ws2/install
+
+Name: Zad1
+Description: Description of Zad1
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

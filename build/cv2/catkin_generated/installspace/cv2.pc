@@ -1,0 +1,8 @@
+prefix=/home/filip/catkin_ws2/install
+
+Name: cv2
+Description: Description of cv2
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

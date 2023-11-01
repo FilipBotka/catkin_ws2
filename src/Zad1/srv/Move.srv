@@ -1,0 +1,5 @@
+Zad1/Data data
+float64[] positions
+---
+bool success
+string message
