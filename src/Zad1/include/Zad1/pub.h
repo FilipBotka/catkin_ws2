@@ -9,8 +9,8 @@
 #include <sensor_msgs/JointState.h>
 #include <std_msgs/Int16.h>
 #include <rrm_msgs/Move.h>
+#include <thread>
 
-#include "robot.h"
 
 class Wrapper;
 
@@ -21,11 +21,13 @@ class Publisher
         ~Publisher() = default;
 
         void update();
-        void timerCallback(const ros::TimerEvent&);
+        void publish();
     private:
         ros::Publisher publisher_;
         ros::NodeHandle nh_;
         ros::Timer timer_;
+
+        std::thread publisher_thread;
         
         std::shared_ptr<Wrapper> wrapper_ptr_;
 };
@@ -67,9 +69,13 @@ class Wrapper
 
         double joint1, joint2, joint3, joint4, joint5, joint6;
 
-        std::vector<double> wrapperPositions;
+        std::vector<double> wrapperPositions = {joint1, joint2, joint3, joint4, joint5, joint6};
+
+        std::vector<double> getVector();
+        void setVector(std::vector<double> j_pos);
 
     private:
+        mutable std::mutex mutex;
 
 
 };

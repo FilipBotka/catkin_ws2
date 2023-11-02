@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/pub_node.dir/src/pub.cpp.o"
   "CMakeFiles/pub_node.dir/src/pub_node.cpp.o"
-  "CMakeFiles/pub_node.dir/src/robot.cpp.o"
   "devel/lib/Zad1/pub_node"
   "devel/lib/Zad1/pub_node.pdb"
 )

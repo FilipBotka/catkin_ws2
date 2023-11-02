@@ -15,6 +15,7 @@
 #include <eigen_conversions/eigen_msg.h>
 #include <tf/transform_broadcaster.h>
 #include <tf_conversions/tf_eigen.h>
+#include <thread>
 
 class Transform
 {
@@ -26,14 +27,18 @@ class Transform
         void update(const geometry_msgs::Pose& pose);
         void jointStateCallback(const sensor_msgs::JointState::ConstPtr& msg); 
         void calcTransf(const sensor_msgs::JointState::ConstPtr& msg);
+
+        void runThread();
     private:
         ros::Subscriber subscriber_;
         ros::Publisher publisher_;
         ros::NodeHandle nh_;
 
+        std::thread subscriber_thread_;
+        ros::Rate loop_rate_;
+
         tf::Transform transform_;
 
 };
-
 
 #endif

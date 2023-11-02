@@ -1,12 +1,22 @@
 #include "../include/Zad1/trans.h"
 
 Transform::Transform(ros::NodeHandle& nh)
-    : nh_(nh)
+    : nh_(nh), loop_rate_(10)
 {
     publisher_ = nh.advertise<geometry_msgs::Pose>("tool_pose",2);
 
     subscriber_ = nh.subscribe<sensor_msgs::JointState>("joint_states", 10, &Transform::jointStateCallback, this);
 
+    subscriber_thread_ = std::thread(&Transform::runThread, this);
+}
+
+void Transform::runThread()
+{
+    while (ros::ok()) {
+        ros::spinOnce();  
+
+        loop_rate_.sleep(); 
+    }
 }
 
 void Transform::update(const geometry_msgs::Pose& pose)
@@ -26,10 +36,6 @@ void Transform::jointStateCallback(const sensor_msgs::JointState::ConstPtr& msg)
 
 void Transform::calcTransf(const sensor_msgs::JointState::ConstPtr& msg)
 {
-    double x = 1;
-    double y = 0.5;
-    double z = 0.1;
-
     double joint1 = msg->position[0];
     double joint2 = msg->position[1];
     double joint3 = msg->position[2];
@@ -51,60 +57,57 @@ void Transform::calcTransf(const sensor_msgs::JointState::ConstPtr& msg)
     nh_.getParam("link5", link5);
     nh_.getParam("link6", link6);
 
+    // z, y, y, z, y, z-prismatic
+
     Eigen::MatrixXd j1(4,4);
     j1 <<  cos(joint1), -sin(joint1), 0, 0,
           sin(joint1), cos(joint1), 0, 0,
-          0, 0, 1, link1,
+          0, 0, 1, 0,
           0, 0, 0, 1;
-    //ROS_INFO_STREAM("j1:\n" << j1);
 
     Eigen::MatrixXd j2(4,4);
     j2 <<  cos(joint2), 0, sin(joint2), 0,
           0, 1, 0, 0,
-          -sin(joint2), 0, cos(joint2), link2,
+          -sin(joint2), 0, cos(joint2), 0,
           0, 0, 0, 1;
-    //ROS_INFO_STREAM("j2:\n" << j2);
 
     Eigen::MatrixXd j3(4,4);
     j3 <<  cos(joint3), 0, sin(joint3), 0,
           0, 1, 0, 0,
           -sin(joint3), 0, cos(joint3), link3,
           0, 0, 0, 1;
-    //ROS_INFO_STREAM("j3:\n" << j3);
 
     Eigen::MatrixXd j4(4,4);
     j4 <<  cos(joint4), -sin(joint4), 0, 0,
           sin(joint4), cos(joint4), 0, 0,
-          0, 0, 1, link4,
+          0, 0, 1, link3,
           0, 0, 0, 1;
-    //ROS_INFO_STREAM("j4:\n" << j4);
 
     Eigen::MatrixXd j5(4,4);
     j5 <<  cos(joint5), 0, sin(joint5), 0,
           0, 1, 0, 0,
-          -sin(joint5), 0, cos(joint5), link5,
+          -sin(joint5), 0, cos(joint5), link4,
           0, 0, 0, 1;
-    //ROS_INFO_STREAM("j5:\n" << j5);
 
     Eigen::Matrix4d j6(4,4);
-    j6 <<  cos(joint6), -sin(joint6), 0, 0,
-          sin(joint6), cos(joint6), 0, 0,
-          0, 0, 1, link6,
+    j6 <<  1, 0, 0, 0,
+          0, 1, 0, 0,
+          0, 0, 1, link5,
           0, 0, 0, 1;
-    //ROS_INFO_STREAM("j6:\n" << j6);
 
-    //Eigen::Matrix4d transMatrix = (j1 * j2 * j3 * j4 * j5 * j6); 
-    /* Eigen::Matrix vec;
-    vec << 0,
-            0,
-            0.203,
-            1; */
+    Eigen::MatrixXd j6_trans(4,4);
+    j6_trans <<  1, 0, 0, 0,
+                0, 1, 0, 0,
+                0, 0, 1, link6,
+                0, 0, 0, 1;
+    
+    Eigen::MatrixXd j6_trans2(4,4);
+    j6_trans2 <<  1, 0, 0, 0,
+                0, 1, 0, 0,
+                0, 0, 1, joint6,
+                0, 0, 0, 1;
 
-    Eigen::Matrix4d transMatrix = (j1 * j2 * j3 * j4 * j5 * j6); 
-    //Eigen::Matrix4d transMatrix2 = transMatrix * vec; 
-
-    ROS_INFO_STREAM("j1 * j2 * j3 * j4 * j5 * j6= \n" << (j1 * j2 * j3 * j4 * j5 * j6));
-
+    Eigen::Matrix4d transMatrix = (j1 * j2 * j3 * j4 * j5 * j6 * j6_trans * j6_trans2); 
 
     Eigen::Affine3d e_pose(transMatrix);
     tf::TransformBroadcaster br;
@@ -124,12 +127,8 @@ void Transform::calcTransf(const sensor_msgs::JointState::ConstPtr& msg)
         loop_rate.sleep();
         ros::spinOnce(); 
     }
-    
-
-    /* Eigen::Affine3d e_pose(transMatrix);
-    tf::Transform transform;
-    tf::poseEigenToTF(e_pose, transform);
- */
+    this->update(pose);
+}
 
 
   /*   Eigen::Quaterniond quaternion(transMatrix.block<3, 3>(0,0));
@@ -137,17 +136,3 @@ void Transform::calcTransf(const sensor_msgs::JointState::ConstPtr& msg)
 
     std::cout << "Quaternion: " << quaternion.coeffs().transpose() << std::endl;
     std::cout << "Translation: " << translation.transpose() << std::endl; */
-
-    /* geometry_msgs::Pose pose;
-
-    pose.orientation.x = quaternion.x();
-    pose.orientation.y = quaternion.y();
-    pose.orientation.z = quaternion.z();
-    pose.orientation.w = quaternion.w();
-
-    pose.position.x = translation[0];
-    pose.position.y = translation[1];
-    pose.position.z = translation[2]; */
-
-    this->update(pose);
-}

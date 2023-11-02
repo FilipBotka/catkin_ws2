@@ -127,14 +127,10 @@ rrm_msgs/Move.h
 /home/filip/catkin_ws2/src/Zad1/src/gui.cpp
 ../include/Zad1/gui.h
 /home/filip/catkin_ws2/src/Zad1/include/Zad1/gui.h
-rrm_msgs/Move.h
--
 
 /home/filip/catkin_ws2/src/Zad1/src/gui_node.cpp
 ../include/Zad1/gui.h
 /home/filip/catkin_ws2/src/Zad1/include/Zad1/gui.h
-rrm_msgs/Move.h
--
 
 /opt/ros/noetic/include/ros/advertise_options.h
 ros/forwards.h

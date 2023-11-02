@@ -80,18 +80,6 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -123,6 +111,18 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -168,426 +168,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-Zad1/CMakeFiles/gui_node.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/gui_node.dir/rule
-.PHONY : Zad1/CMakeFiles/gui_node.dir/rule
-
-# Convenience name for target.
-gui_node: Zad1/CMakeFiles/gui_node.dir/rule
-
-.PHONY : gui_node
-
-# fast build rule for target.
-gui_node/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/gui_node.dir/build.make Zad1/CMakeFiles/gui_node.dir/build
-.PHONY : gui_node/fast
-
-# Convenience name for target.
-Zad1/CMakeFiles/Zad1_gennodejs.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/Zad1_gennodejs.dir/rule
-.PHONY : Zad1/CMakeFiles/Zad1_gennodejs.dir/rule
-
-# Convenience name for target.
-Zad1_gennodejs: Zad1/CMakeFiles/Zad1_gennodejs.dir/rule
-
-.PHONY : Zad1_gennodejs
-
-# fast build rule for target.
-Zad1_gennodejs/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/Zad1_gennodejs.dir/build.make Zad1/CMakeFiles/Zad1_gennodejs.dir/build
-.PHONY : Zad1_gennodejs/fast
-
-# Convenience name for target.
-Zad1/CMakeFiles/Zad1_generate_messages_nodejs.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/Zad1_generate_messages_nodejs.dir/rule
-.PHONY : Zad1/CMakeFiles/Zad1_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-Zad1_generate_messages_nodejs: Zad1/CMakeFiles/Zad1_generate_messages_nodejs.dir/rule
-
-.PHONY : Zad1_generate_messages_nodejs
-
-# fast build rule for target.
-Zad1_generate_messages_nodejs/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/Zad1_generate_messages_nodejs.dir/build.make Zad1/CMakeFiles/Zad1_generate_messages_nodejs.dir/build
-.PHONY : Zad1_generate_messages_nodejs/fast
-
-# Convenience name for target.
-Zad1/CMakeFiles/Zad1_generate_messages_eus.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/Zad1_generate_messages_eus.dir/rule
-.PHONY : Zad1/CMakeFiles/Zad1_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-Zad1_generate_messages_eus: Zad1/CMakeFiles/Zad1_generate_messages_eus.dir/rule
-
-.PHONY : Zad1_generate_messages_eus
-
-# fast build rule for target.
-Zad1_generate_messages_eus/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/Zad1_generate_messages_eus.dir/build.make Zad1/CMakeFiles/Zad1_generate_messages_eus.dir/build
-.PHONY : Zad1_generate_messages_eus/fast
-
-# Convenience name for target.
-Zad1/CMakeFiles/Zad1_genpy.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/Zad1_genpy.dir/rule
-.PHONY : Zad1/CMakeFiles/Zad1_genpy.dir/rule
-
-# Convenience name for target.
-Zad1_genpy: Zad1/CMakeFiles/Zad1_genpy.dir/rule
-
-.PHONY : Zad1_genpy
-
-# fast build rule for target.
-Zad1_genpy/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/Zad1_genpy.dir/build.make Zad1/CMakeFiles/Zad1_genpy.dir/build
-.PHONY : Zad1_genpy/fast
-
-# Convenience name for target.
-Zad1/CMakeFiles/Zad1_gencpp.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/Zad1_gencpp.dir/rule
-.PHONY : Zad1/CMakeFiles/Zad1_gencpp.dir/rule
-
-# Convenience name for target.
-Zad1_gencpp: Zad1/CMakeFiles/Zad1_gencpp.dir/rule
-
-.PHONY : Zad1_gencpp
-
-# fast build rule for target.
-Zad1_gencpp/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/Zad1_gencpp.dir/build.make Zad1/CMakeFiles/Zad1_gencpp.dir/build
-.PHONY : Zad1_gencpp/fast
-
-# Convenience name for target.
-Zad1/CMakeFiles/Zad1_generate_messages_cpp.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/Zad1_generate_messages_cpp.dir/rule
-.PHONY : Zad1/CMakeFiles/Zad1_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-Zad1_generate_messages_cpp: Zad1/CMakeFiles/Zad1_generate_messages_cpp.dir/rule
-
-.PHONY : Zad1_generate_messages_cpp
-
-# fast build rule for target.
-Zad1_generate_messages_cpp/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/Zad1_generate_messages_cpp.dir/build.make Zad1/CMakeFiles/Zad1_generate_messages_cpp.dir/build
-.PHONY : Zad1_generate_messages_cpp/fast
-
-# Convenience name for target.
-Zad1/CMakeFiles/Zad1_genlisp.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/Zad1_genlisp.dir/rule
-.PHONY : Zad1/CMakeFiles/Zad1_genlisp.dir/rule
-
-# Convenience name for target.
-Zad1_genlisp: Zad1/CMakeFiles/Zad1_genlisp.dir/rule
-
-.PHONY : Zad1_genlisp
-
-# fast build rule for target.
-Zad1_genlisp/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/Zad1_genlisp.dir/build.make Zad1/CMakeFiles/Zad1_genlisp.dir/build
-.PHONY : Zad1_genlisp/fast
-
-# Convenience name for target.
-Zad1/CMakeFiles/_Zad1_generate_messages_check_deps_Move.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/_Zad1_generate_messages_check_deps_Move.dir/rule
-.PHONY : Zad1/CMakeFiles/_Zad1_generate_messages_check_deps_Move.dir/rule
-
-# Convenience name for target.
-_Zad1_generate_messages_check_deps_Move: Zad1/CMakeFiles/_Zad1_generate_messages_check_deps_Move.dir/rule
-
-.PHONY : _Zad1_generate_messages_check_deps_Move
-
-# fast build rule for target.
-_Zad1_generate_messages_check_deps_Move/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/_Zad1_generate_messages_check_deps_Move.dir/build.make Zad1/CMakeFiles/_Zad1_generate_messages_check_deps_Move.dir/build
-.PHONY : _Zad1_generate_messages_check_deps_Move/fast
-
-# Convenience name for target.
-Zad1/CMakeFiles/_Zad1_generate_messages_check_deps_Data.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/_Zad1_generate_messages_check_deps_Data.dir/rule
-.PHONY : Zad1/CMakeFiles/_Zad1_generate_messages_check_deps_Data.dir/rule
-
-# Convenience name for target.
-_Zad1_generate_messages_check_deps_Data: Zad1/CMakeFiles/_Zad1_generate_messages_check_deps_Data.dir/rule
-
-.PHONY : _Zad1_generate_messages_check_deps_Data
-
-# fast build rule for target.
-_Zad1_generate_messages_check_deps_Data/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/_Zad1_generate_messages_check_deps_Data.dir/build.make Zad1/CMakeFiles/_Zad1_generate_messages_check_deps_Data.dir/build
-.PHONY : _Zad1_generate_messages_check_deps_Data/fast
-
-# Convenience name for target.
-Zad1/CMakeFiles/Zad1_generate_messages.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/Zad1_generate_messages.dir/rule
-.PHONY : Zad1/CMakeFiles/Zad1_generate_messages.dir/rule
-
-# Convenience name for target.
-Zad1_generate_messages: Zad1/CMakeFiles/Zad1_generate_messages.dir/rule
-
-.PHONY : Zad1_generate_messages
-
-# fast build rule for target.
-Zad1_generate_messages/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/Zad1_generate_messages.dir/build.make Zad1/CMakeFiles/Zad1_generate_messages.dir/build
-.PHONY : Zad1_generate_messages/fast
-
-# Convenience name for target.
-Zad1/CMakeFiles/tf_generate_messages_py.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/tf_generate_messages_py.dir/rule
-.PHONY : Zad1/CMakeFiles/tf_generate_messages_py.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_py: Zad1/CMakeFiles/tf_generate_messages_py.dir/rule
-
-.PHONY : tf_generate_messages_py
-
-# fast build rule for target.
-tf_generate_messages_py/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/tf_generate_messages_py.dir/build.make Zad1/CMakeFiles/tf_generate_messages_py.dir/build
-.PHONY : tf_generate_messages_py/fast
-
-# Convenience name for target.
-Zad1/CMakeFiles/actionlib_generate_messages_py.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/actionlib_generate_messages_py.dir/rule
-.PHONY : Zad1/CMakeFiles/actionlib_generate_messages_py.dir/rule
-
-# Convenience name for target.
-actionlib_generate_messages_py: Zad1/CMakeFiles/actionlib_generate_messages_py.dir/rule
-
-.PHONY : actionlib_generate_messages_py
-
-# fast build rule for target.
-actionlib_generate_messages_py/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/actionlib_generate_messages_py.dir/build.make Zad1/CMakeFiles/actionlib_generate_messages_py.dir/build
-.PHONY : actionlib_generate_messages_py/fast
-
-# Convenience name for target.
-Zad1/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
-.PHONY : Zad1/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-actionlib_msgs_generate_messages_nodejs: Zad1/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : actionlib_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_nodejs/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make Zad1/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
-.PHONY : actionlib_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-Zad1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-.PHONY : Zad1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_nodejs: Zad1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-geometry_msgs_generate_messages_nodejs/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make Zad1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
-.PHONY : geometry_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-Zad1/CMakeFiles/Zad1_generate_messages_lisp.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/Zad1_generate_messages_lisp.dir/rule
-.PHONY : Zad1/CMakeFiles/Zad1_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-Zad1_generate_messages_lisp: Zad1/CMakeFiles/Zad1_generate_messages_lisp.dir/rule
-
-.PHONY : Zad1_generate_messages_lisp
-
-# fast build rule for target.
-Zad1_generate_messages_lisp/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/Zad1_generate_messages_lisp.dir/build.make Zad1/CMakeFiles/Zad1_generate_messages_lisp.dir/build
-.PHONY : Zad1_generate_messages_lisp/fast
-
-# Convenience name for target.
-Zad1/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
-.PHONY : Zad1/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-tf2_msgs_generate_messages_py: Zad1/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
-
-.PHONY : tf2_msgs_generate_messages_py
-
-# fast build rule for target.
-tf2_msgs_generate_messages_py/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make Zad1/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
-.PHONY : tf2_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-Zad1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-.PHONY : Zad1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_cpp: Zad1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_cpp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_cpp/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make Zad1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
-.PHONY : geometry_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-Zad1/CMakeFiles/tf_generate_messages_lisp.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/tf_generate_messages_lisp.dir/rule
-.PHONY : Zad1/CMakeFiles/tf_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_lisp: Zad1/CMakeFiles/tf_generate_messages_lisp.dir/rule
-
-.PHONY : tf_generate_messages_lisp
-
-# fast build rule for target.
-tf_generate_messages_lisp/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/tf_generate_messages_lisp.dir/build.make Zad1/CMakeFiles/tf_generate_messages_lisp.dir/build
-.PHONY : tf_generate_messages_lisp/fast
-
-# Convenience name for target.
-Zad1/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
-.PHONY : Zad1/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-actionlib_msgs_generate_messages_eus: Zad1/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
-
-.PHONY : actionlib_msgs_generate_messages_eus
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_eus/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make Zad1/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
-.PHONY : actionlib_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-Zad1/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
-.PHONY : Zad1/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-tf2_msgs_generate_messages_lisp: Zad1/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : tf2_msgs_generate_messages_lisp
-
-# fast build rule for target.
-tf2_msgs_generate_messages_lisp/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make Zad1/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
-.PHONY : tf2_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-Zad1/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-.PHONY : Zad1/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_py: Zad1/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_py
-
-# fast build rule for target.
-sensor_msgs_generate_messages_py/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make Zad1/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
-.PHONY : sensor_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-Zad1/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-.PHONY : Zad1/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_py: Zad1/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_py
-
-# fast build rule for target.
-geometry_msgs_generate_messages_py/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make Zad1/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
-.PHONY : geometry_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-Zad1/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
-.PHONY : Zad1/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_nodejs: Zad1/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-sensor_msgs_generate_messages_nodejs/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make Zad1/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
-.PHONY : sensor_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-Zad1/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-.PHONY : Zad1/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_lisp: Zad1/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_lisp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_lisp/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make Zad1/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
-.PHONY : sensor_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-Zad1/CMakeFiles/tf_generate_messages_cpp.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/tf_generate_messages_cpp.dir/rule
-.PHONY : Zad1/CMakeFiles/tf_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_cpp: Zad1/CMakeFiles/tf_generate_messages_cpp.dir/rule
-
-.PHONY : tf_generate_messages_cpp
-
-# fast build rule for target.
-tf_generate_messages_cpp/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/tf_generate_messages_cpp.dir/build.make Zad1/CMakeFiles/tf_generate_messages_cpp.dir/build
-.PHONY : tf_generate_messages_cpp/fast
-
-# Convenience name for target.
-Zad1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-.PHONY : Zad1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_lisp: Zad1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_lisp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_lisp/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make Zad1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
-.PHONY : geometry_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-Zad1/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
-.PHONY : Zad1/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_eus: Zad1/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_eus
-
-# fast build rule for target.
-geometry_msgs_generate_messages_eus/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make Zad1/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
-.PHONY : geometry_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
 Zad1/CMakeFiles/trans_node.dir/rule:
 	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/trans_node.dir/rule
 .PHONY : Zad1/CMakeFiles/trans_node.dir/rule
@@ -603,64 +183,19 @@ trans_node/fast:
 .PHONY : trans_node/fast
 
 # Convenience name for target.
-Zad1/CMakeFiles/pub_node.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/pub_node.dir/rule
-.PHONY : Zad1/CMakeFiles/pub_node.dir/rule
+Zad1/CMakeFiles/gui_node.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/gui_node.dir/rule
+.PHONY : Zad1/CMakeFiles/gui_node.dir/rule
 
 # Convenience name for target.
-pub_node: Zad1/CMakeFiles/pub_node.dir/rule
+gui_node: Zad1/CMakeFiles/gui_node.dir/rule
 
-.PHONY : pub_node
+.PHONY : gui_node
 
 # fast build rule for target.
-pub_node/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/pub_node.dir/build.make Zad1/CMakeFiles/pub_node.dir/build
-.PHONY : pub_node/fast
-
-# Convenience name for target.
-Zad1/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
-.PHONY : Zad1/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_eus: Zad1/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_eus
-
-# fast build rule for target.
-sensor_msgs_generate_messages_eus/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make Zad1/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
-.PHONY : sensor_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-Zad1/CMakeFiles/actionlib_generate_messages_lisp.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
-.PHONY : Zad1/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-actionlib_generate_messages_lisp: Zad1/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
-
-.PHONY : actionlib_generate_messages_lisp
-
-# fast build rule for target.
-actionlib_generate_messages_lisp/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make Zad1/CMakeFiles/actionlib_generate_messages_lisp.dir/build
-.PHONY : actionlib_generate_messages_lisp/fast
-
-# Convenience name for target.
-Zad1/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-.PHONY : Zad1/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_cpp: Zad1/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_cpp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_cpp/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make Zad1/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
-.PHONY : sensor_msgs_generate_messages_cpp/fast
+gui_node/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/gui_node.dir/build.make Zad1/CMakeFiles/gui_node.dir/build
+.PHONY : gui_node/fast
 
 # Convenience name for target.
 Zad1/CMakeFiles/tf_generate_messages_nodejs.dir/rule:
@@ -678,109 +213,64 @@ tf_generate_messages_nodejs/fast:
 .PHONY : tf_generate_messages_nodejs/fast
 
 # Convenience name for target.
-Zad1/CMakeFiles/Zad1_generate_messages_py.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/Zad1_generate_messages_py.dir/rule
-.PHONY : Zad1/CMakeFiles/Zad1_generate_messages_py.dir/rule
+Zad1/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+.PHONY : Zad1/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-Zad1_generate_messages_py: Zad1/CMakeFiles/Zad1_generate_messages_py.dir/rule
+geometry_msgs_generate_messages_eus: Zad1/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 
-.PHONY : Zad1_generate_messages_py
+.PHONY : geometry_msgs_generate_messages_eus
 
 # fast build rule for target.
-Zad1_generate_messages_py/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/Zad1_generate_messages_py.dir/build.make Zad1/CMakeFiles/Zad1_generate_messages_py.dir/build
-.PHONY : Zad1_generate_messages_py/fast
+geometry_msgs_generate_messages_eus/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make Zad1/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+.PHONY : geometry_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
-Zad1/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
-.PHONY : Zad1/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
+Zad1/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
+.PHONY : Zad1/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-tf2_msgs_generate_messages_eus: Zad1/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
+std_srvs_generate_messages_nodejs: Zad1/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
 
-.PHONY : tf2_msgs_generate_messages_eus
+.PHONY : std_srvs_generate_messages_nodejs
 
 # fast build rule for target.
-tf2_msgs_generate_messages_eus/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make Zad1/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
-.PHONY : tf2_msgs_generate_messages_eus/fast
+std_srvs_generate_messages_nodejs/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make Zad1/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
+.PHONY : std_srvs_generate_messages_nodejs/fast
 
 # Convenience name for target.
-Zad1/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
-.PHONY : Zad1/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
+Zad1/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+.PHONY : Zad1/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-actionlib_generate_messages_nodejs: Zad1/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
+roscpp_generate_messages_eus: Zad1/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
-.PHONY : actionlib_generate_messages_nodejs
+.PHONY : roscpp_generate_messages_eus
 
 # fast build rule for target.
-actionlib_generate_messages_nodejs/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make Zad1/CMakeFiles/actionlib_generate_messages_nodejs.dir/build
-.PHONY : actionlib_generate_messages_nodejs/fast
+roscpp_generate_messages_eus/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/roscpp_generate_messages_eus.dir/build.make Zad1/CMakeFiles/roscpp_generate_messages_eus.dir/build
+.PHONY : roscpp_generate_messages_eus/fast
 
 # Convenience name for target.
-Zad1/CMakeFiles/actionlib_generate_messages_eus.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/actionlib_generate_messages_eus.dir/rule
-.PHONY : Zad1/CMakeFiles/actionlib_generate_messages_eus.dir/rule
+Zad1/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+.PHONY : Zad1/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-actionlib_generate_messages_eus: Zad1/CMakeFiles/actionlib_generate_messages_eus.dir/rule
+rosgraph_msgs_generate_messages_nodejs: Zad1/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
-.PHONY : actionlib_generate_messages_eus
+.PHONY : rosgraph_msgs_generate_messages_nodejs
 
 # fast build rule for target.
-actionlib_generate_messages_eus/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/actionlib_generate_messages_eus.dir/build.make Zad1/CMakeFiles/actionlib_generate_messages_eus.dir/build
-.PHONY : actionlib_generate_messages_eus/fast
-
-# Convenience name for target.
-Zad1/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
-.PHONY : Zad1/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-actionlib_msgs_generate_messages_cpp: Zad1/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : actionlib_msgs_generate_messages_cpp
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_cpp/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make Zad1/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
-.PHONY : actionlib_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-Zad1/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
-.PHONY : Zad1/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-actionlib_msgs_generate_messages_lisp: Zad1/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : actionlib_msgs_generate_messages_lisp
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_lisp/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make Zad1/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
-.PHONY : actionlib_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-Zad1/CMakeFiles/Zad1_geneus.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/Zad1_geneus.dir/rule
-.PHONY : Zad1/CMakeFiles/Zad1_geneus.dir/rule
-
-# Convenience name for target.
-Zad1_geneus: Zad1/CMakeFiles/Zad1_geneus.dir/rule
-
-.PHONY : Zad1_geneus
-
-# fast build rule for target.
-Zad1_geneus/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/Zad1_geneus.dir/build.make Zad1/CMakeFiles/Zad1_geneus.dir/build
-.PHONY : Zad1_geneus/fast
+rosgraph_msgs_generate_messages_nodejs/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make Zad1/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 Zad1/CMakeFiles/actionlib_generate_messages_cpp.dir/rule:
@@ -813,19 +303,244 @@ actionlib_msgs_generate_messages_py/fast:
 .PHONY : actionlib_msgs_generate_messages_py/fast
 
 # Convenience name for target.
-Zad1/CMakeFiles/tf_generate_messages_eus.dir/rule:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/tf_generate_messages_eus.dir/rule
-.PHONY : Zad1/CMakeFiles/tf_generate_messages_eus.dir/rule
+Zad1/CMakeFiles/Zad1_geneus.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/Zad1_geneus.dir/rule
+.PHONY : Zad1/CMakeFiles/Zad1_geneus.dir/rule
 
 # Convenience name for target.
-tf_generate_messages_eus: Zad1/CMakeFiles/tf_generate_messages_eus.dir/rule
+Zad1_geneus: Zad1/CMakeFiles/Zad1_geneus.dir/rule
 
-.PHONY : tf_generate_messages_eus
+.PHONY : Zad1_geneus
 
 # fast build rule for target.
-tf_generate_messages_eus/fast:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/tf_generate_messages_eus.dir/build.make Zad1/CMakeFiles/tf_generate_messages_eus.dir/build
-.PHONY : tf_generate_messages_eus/fast
+Zad1_geneus/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/Zad1_geneus.dir/build.make Zad1/CMakeFiles/Zad1_geneus.dir/build
+.PHONY : Zad1_geneus/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/std_srvs_generate_messages_eus.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+.PHONY : Zad1/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_eus: Zad1/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+
+.PHONY : std_srvs_generate_messages_eus
+
+# fast build rule for target.
+std_srvs_generate_messages_eus/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make Zad1/CMakeFiles/std_srvs_generate_messages_eus.dir/build
+.PHONY : std_srvs_generate_messages_eus/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : Zad1/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_cpp: Zad1/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+.PHONY : roscpp_generate_messages_cpp
+
+# fast build rule for target.
+roscpp_generate_messages_cpp/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make Zad1/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+.PHONY : roscpp_generate_messages_cpp/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/pub_node.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/pub_node.dir/rule
+.PHONY : Zad1/CMakeFiles/pub_node.dir/rule
+
+# Convenience name for target.
+pub_node: Zad1/CMakeFiles/pub_node.dir/rule
+
+.PHONY : pub_node
+
+# fast build rule for target.
+pub_node/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/pub_node.dir/build.make Zad1/CMakeFiles/pub_node.dir/build
+.PHONY : pub_node/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/roscpp_generate_messages_py.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : Zad1/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_py: Zad1/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+.PHONY : roscpp_generate_messages_py
+
+# fast build rule for target.
+roscpp_generate_messages_py/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/roscpp_generate_messages_py.dir/build.make Zad1/CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
+.PHONY : Zad1/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_lisp: Zad1/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
+
+.PHONY : std_srvs_generate_messages_lisp
+
+# fast build rule for target.
+std_srvs_generate_messages_lisp/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make Zad1/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
+.PHONY : std_srvs_generate_messages_lisp/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+.PHONY : Zad1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_lisp: Zad1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_lisp/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make Zad1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+.PHONY : geometry_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/tf_generate_messages_cpp.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/tf_generate_messages_cpp.dir/rule
+.PHONY : Zad1/CMakeFiles/tf_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_cpp: Zad1/CMakeFiles/tf_generate_messages_cpp.dir/rule
+
+.PHONY : tf_generate_messages_cpp
+
+# fast build rule for target.
+tf_generate_messages_cpp/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/tf_generate_messages_cpp.dir/build.make Zad1/CMakeFiles/tf_generate_messages_cpp.dir/build
+.PHONY : tf_generate_messages_cpp/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+.PHONY : Zad1/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_nodejs: Zad1/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+
+.PHONY : roscpp_generate_messages_nodejs
+
+# fast build rule for target.
+roscpp_generate_messages_nodejs/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make Zad1/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+.PHONY : roscpp_generate_messages_nodejs/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/Zad1_generate_messages_cpp.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/Zad1_generate_messages_cpp.dir/rule
+.PHONY : Zad1/CMakeFiles/Zad1_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+Zad1_generate_messages_cpp: Zad1/CMakeFiles/Zad1_generate_messages_cpp.dir/rule
+
+.PHONY : Zad1_generate_messages_cpp
+
+# fast build rule for target.
+Zad1_generate_messages_cpp/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/Zad1_generate_messages_cpp.dir/build.make Zad1/CMakeFiles/Zad1_generate_messages_cpp.dir/build
+.PHONY : Zad1_generate_messages_cpp/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
+.PHONY : Zad1/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_eus: Zad1/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_eus
+
+# fast build rule for target.
+tf2_msgs_generate_messages_eus/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make Zad1/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
+.PHONY : tf2_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+.PHONY : Zad1/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_py: Zad1/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_py
+
+# fast build rule for target.
+sensor_msgs_generate_messages_py/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make Zad1/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+.PHONY : sensor_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+.PHONY : Zad1/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_nodejs: Zad1/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+sensor_msgs_generate_messages_nodejs/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make Zad1/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+.PHONY : sensor_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+.PHONY : Zad1/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_eus: Zad1/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_eus
+
+# fast build rule for target.
+sensor_msgs_generate_messages_eus/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make Zad1/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+.PHONY : sensor_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+.PHONY : Zad1/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_lisp: Zad1/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_lisp/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make Zad1/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+.PHONY : sensor_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+.PHONY : Zad1/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_cpp: Zad1/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+
+.PHONY : std_srvs_generate_messages_cpp
+
+# fast build rule for target.
+std_srvs_generate_messages_cpp/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make Zad1/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
+.PHONY : std_srvs_generate_messages_cpp/fast
 
 # Convenience name for target.
 Zad1/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule:
@@ -843,6 +558,306 @@ tf2_msgs_generate_messages_cpp/fast:
 .PHONY : tf2_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
+Zad1/CMakeFiles/std_srvs_generate_messages_py.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+.PHONY : Zad1/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_py: Zad1/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+
+.PHONY : std_srvs_generate_messages_py
+
+# fast build rule for target.
+std_srvs_generate_messages_py/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/std_srvs_generate_messages_py.dir/build.make Zad1/CMakeFiles/std_srvs_generate_messages_py.dir/build
+.PHONY : std_srvs_generate_messages_py/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+.PHONY : Zad1/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_eus: Zad1/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_eus
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_eus/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make Zad1/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+.PHONY : rosgraph_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/tf_generate_messages_eus.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/tf_generate_messages_eus.dir/rule
+.PHONY : Zad1/CMakeFiles/tf_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_eus: Zad1/CMakeFiles/tf_generate_messages_eus.dir/rule
+
+.PHONY : tf_generate_messages_eus
+
+# fast build rule for target.
+tf_generate_messages_eus/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/tf_generate_messages_eus.dir/build.make Zad1/CMakeFiles/tf_generate_messages_eus.dir/build
+.PHONY : tf_generate_messages_eus/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+.PHONY : Zad1/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_lisp: Zad1/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_lisp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_lisp/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make Zad1/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+.PHONY : Zad1/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_eus: Zad1/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_eus
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_eus/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make Zad1/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
+.PHONY : actionlib_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/tf_generate_messages_lisp.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/tf_generate_messages_lisp.dir/rule
+.PHONY : Zad1/CMakeFiles/tf_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_lisp: Zad1/CMakeFiles/tf_generate_messages_lisp.dir/rule
+
+.PHONY : tf_generate_messages_lisp
+
+# fast build rule for target.
+tf_generate_messages_lisp/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/tf_generate_messages_lisp.dir/build.make Zad1/CMakeFiles/tf_generate_messages_lisp.dir/build
+.PHONY : tf_generate_messages_lisp/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/Zad1_generate_messages_py.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/Zad1_generate_messages_py.dir/rule
+.PHONY : Zad1/CMakeFiles/Zad1_generate_messages_py.dir/rule
+
+# Convenience name for target.
+Zad1_generate_messages_py: Zad1/CMakeFiles/Zad1_generate_messages_py.dir/rule
+
+.PHONY : Zad1_generate_messages_py
+
+# fast build rule for target.
+Zad1_generate_messages_py/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/Zad1_generate_messages_py.dir/build.make Zad1/CMakeFiles/Zad1_generate_messages_py.dir/build
+.PHONY : Zad1_generate_messages_py/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+.PHONY : Zad1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_cpp: Zad1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_cpp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_cpp/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make Zad1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+.PHONY : geometry_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
+.PHONY : Zad1/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_py: Zad1/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_py
+
+# fast build rule for target.
+tf2_msgs_generate_messages_py/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make Zad1/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
+.PHONY : tf2_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+.PHONY : Zad1/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_cpp: Zad1/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_cpp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_cpp/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make Zad1/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+.PHONY : sensor_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/Zad1_generate_messages_lisp.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/Zad1_generate_messages_lisp.dir/rule
+.PHONY : Zad1/CMakeFiles/Zad1_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+Zad1_generate_messages_lisp: Zad1/CMakeFiles/Zad1_generate_messages_lisp.dir/rule
+
+.PHONY : Zad1_generate_messages_lisp
+
+# fast build rule for target.
+Zad1_generate_messages_lisp/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/Zad1_generate_messages_lisp.dir/build.make Zad1/CMakeFiles/Zad1_generate_messages_lisp.dir/build
+.PHONY : Zad1_generate_messages_lisp/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+.PHONY : Zad1/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_lisp: Zad1/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+
+.PHONY : roscpp_generate_messages_lisp
+
+# fast build rule for target.
+roscpp_generate_messages_lisp/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make Zad1/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+.PHONY : roscpp_generate_messages_lisp/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/actionlib_generate_messages_lisp.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+.PHONY : Zad1/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_lisp: Zad1/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+
+.PHONY : actionlib_generate_messages_lisp
+
+# fast build rule for target.
+actionlib_generate_messages_lisp/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make Zad1/CMakeFiles/actionlib_generate_messages_lisp.dir/build
+.PHONY : actionlib_generate_messages_lisp/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+.PHONY : Zad1/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_py: Zad1/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_py
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_py/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make Zad1/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+.PHONY : rosgraph_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : Zad1/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_cpp: Zad1/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_cpp/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make Zad1/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/actionlib_generate_messages_eus.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/actionlib_generate_messages_eus.dir/rule
+.PHONY : Zad1/CMakeFiles/actionlib_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_eus: Zad1/CMakeFiles/actionlib_generate_messages_eus.dir/rule
+
+.PHONY : actionlib_generate_messages_eus
+
+# fast build rule for target.
+actionlib_generate_messages_eus/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/actionlib_generate_messages_eus.dir/build.make Zad1/CMakeFiles/actionlib_generate_messages_eus.dir/build
+.PHONY : actionlib_generate_messages_eus/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
+.PHONY : Zad1/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_cpp: Zad1/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_cpp
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_cpp/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make Zad1/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
+.PHONY : actionlib_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
+.PHONY : Zad1/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_nodejs: Zad1/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
+
+.PHONY : actionlib_generate_messages_nodejs
+
+# fast build rule for target.
+actionlib_generate_messages_nodejs/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make Zad1/CMakeFiles/actionlib_generate_messages_nodejs.dir/build
+.PHONY : actionlib_generate_messages_nodejs/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/actionlib_generate_messages_py.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/actionlib_generate_messages_py.dir/rule
+.PHONY : Zad1/CMakeFiles/actionlib_generate_messages_py.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_py: Zad1/CMakeFiles/actionlib_generate_messages_py.dir/rule
+
+.PHONY : actionlib_generate_messages_py
+
+# fast build rule for target.
+actionlib_generate_messages_py/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/actionlib_generate_messages_py.dir/build.make Zad1/CMakeFiles/actionlib_generate_messages_py.dir/build
+.PHONY : actionlib_generate_messages_py/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
+.PHONY : Zad1/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_lisp: Zad1/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_lisp
+
+# fast build rule for target.
+tf2_msgs_generate_messages_lisp/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make Zad1/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
+.PHONY : tf2_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
 Zad1/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule:
 	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
 .PHONY : Zad1/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
@@ -856,6 +871,216 @@ tf2_msgs_generate_messages_nodejs: Zad1/CMakeFiles/tf2_msgs_generate_messages_no
 tf2_msgs_generate_messages_nodejs/fast:
 	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make Zad1/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
 .PHONY : tf2_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/Zad1_generate_messages.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/Zad1_generate_messages.dir/rule
+.PHONY : Zad1/CMakeFiles/Zad1_generate_messages.dir/rule
+
+# Convenience name for target.
+Zad1_generate_messages: Zad1/CMakeFiles/Zad1_generate_messages.dir/rule
+
+.PHONY : Zad1_generate_messages
+
+# fast build rule for target.
+Zad1_generate_messages/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/Zad1_generate_messages.dir/build.make Zad1/CMakeFiles/Zad1_generate_messages.dir/build
+.PHONY : Zad1_generate_messages/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/_Zad1_generate_messages_check_deps_Data.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/_Zad1_generate_messages_check_deps_Data.dir/rule
+.PHONY : Zad1/CMakeFiles/_Zad1_generate_messages_check_deps_Data.dir/rule
+
+# Convenience name for target.
+_Zad1_generate_messages_check_deps_Data: Zad1/CMakeFiles/_Zad1_generate_messages_check_deps_Data.dir/rule
+
+.PHONY : _Zad1_generate_messages_check_deps_Data
+
+# fast build rule for target.
+_Zad1_generate_messages_check_deps_Data/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/_Zad1_generate_messages_check_deps_Data.dir/build.make Zad1/CMakeFiles/_Zad1_generate_messages_check_deps_Data.dir/build
+.PHONY : _Zad1_generate_messages_check_deps_Data/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/tf_generate_messages_py.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/tf_generate_messages_py.dir/rule
+.PHONY : Zad1/CMakeFiles/tf_generate_messages_py.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_py: Zad1/CMakeFiles/tf_generate_messages_py.dir/rule
+
+.PHONY : tf_generate_messages_py
+
+# fast build rule for target.
+tf_generate_messages_py/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/tf_generate_messages_py.dir/build.make Zad1/CMakeFiles/tf_generate_messages_py.dir/build
+.PHONY : tf_generate_messages_py/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
+.PHONY : Zad1/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_nodejs: Zad1/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_nodejs/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make Zad1/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
+.PHONY : actionlib_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
+.PHONY : Zad1/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_lisp: Zad1/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_lisp
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_lisp/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make Zad1/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
+.PHONY : actionlib_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/_Zad1_generate_messages_check_deps_Move.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/_Zad1_generate_messages_check_deps_Move.dir/rule
+.PHONY : Zad1/CMakeFiles/_Zad1_generate_messages_check_deps_Move.dir/rule
+
+# Convenience name for target.
+_Zad1_generate_messages_check_deps_Move: Zad1/CMakeFiles/_Zad1_generate_messages_check_deps_Move.dir/rule
+
+.PHONY : _Zad1_generate_messages_check_deps_Move
+
+# fast build rule for target.
+_Zad1_generate_messages_check_deps_Move/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/_Zad1_generate_messages_check_deps_Move.dir/build.make Zad1/CMakeFiles/_Zad1_generate_messages_check_deps_Move.dir/build
+.PHONY : _Zad1_generate_messages_check_deps_Move/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/Zad1_genlisp.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/Zad1_genlisp.dir/rule
+.PHONY : Zad1/CMakeFiles/Zad1_genlisp.dir/rule
+
+# Convenience name for target.
+Zad1_genlisp: Zad1/CMakeFiles/Zad1_genlisp.dir/rule
+
+.PHONY : Zad1_genlisp
+
+# fast build rule for target.
+Zad1_genlisp/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/Zad1_genlisp.dir/build.make Zad1/CMakeFiles/Zad1_genlisp.dir/build
+.PHONY : Zad1_genlisp/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/Zad1_gencpp.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/Zad1_gencpp.dir/rule
+.PHONY : Zad1/CMakeFiles/Zad1_gencpp.dir/rule
+
+# Convenience name for target.
+Zad1_gencpp: Zad1/CMakeFiles/Zad1_gencpp.dir/rule
+
+.PHONY : Zad1_gencpp
+
+# fast build rule for target.
+Zad1_gencpp/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/Zad1_gencpp.dir/build.make Zad1/CMakeFiles/Zad1_gencpp.dir/build
+.PHONY : Zad1_gencpp/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+.PHONY : Zad1/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_py: Zad1/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_py
+
+# fast build rule for target.
+geometry_msgs_generate_messages_py/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make Zad1/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+.PHONY : geometry_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/Zad1_genpy.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/Zad1_genpy.dir/rule
+.PHONY : Zad1/CMakeFiles/Zad1_genpy.dir/rule
+
+# Convenience name for target.
+Zad1_genpy: Zad1/CMakeFiles/Zad1_genpy.dir/rule
+
+.PHONY : Zad1_genpy
+
+# fast build rule for target.
+Zad1_genpy/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/Zad1_genpy.dir/build.make Zad1/CMakeFiles/Zad1_genpy.dir/build
+.PHONY : Zad1_genpy/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/Zad1_generate_messages_eus.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/Zad1_generate_messages_eus.dir/rule
+.PHONY : Zad1/CMakeFiles/Zad1_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+Zad1_generate_messages_eus: Zad1/CMakeFiles/Zad1_generate_messages_eus.dir/rule
+
+.PHONY : Zad1_generate_messages_eus
+
+# fast build rule for target.
+Zad1_generate_messages_eus/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/Zad1_generate_messages_eus.dir/build.make Zad1/CMakeFiles/Zad1_generate_messages_eus.dir/build
+.PHONY : Zad1_generate_messages_eus/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+.PHONY : Zad1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_nodejs: Zad1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+geometry_msgs_generate_messages_nodejs/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make Zad1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+.PHONY : geometry_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/Zad1_generate_messages_nodejs.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/Zad1_generate_messages_nodejs.dir/rule
+.PHONY : Zad1/CMakeFiles/Zad1_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+Zad1_generate_messages_nodejs: Zad1/CMakeFiles/Zad1_generate_messages_nodejs.dir/rule
+
+.PHONY : Zad1_generate_messages_nodejs
+
+# fast build rule for target.
+Zad1_generate_messages_nodejs/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/Zad1_generate_messages_nodejs.dir/build.make Zad1/CMakeFiles/Zad1_generate_messages_nodejs.dir/build
+.PHONY : Zad1_generate_messages_nodejs/fast
+
+# Convenience name for target.
+Zad1/CMakeFiles/Zad1_gennodejs.dir/rule:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f CMakeFiles/Makefile2 Zad1/CMakeFiles/Zad1_gennodejs.dir/rule
+.PHONY : Zad1/CMakeFiles/Zad1_gennodejs.dir/rule
+
+# Convenience name for target.
+Zad1_gennodejs: Zad1/CMakeFiles/Zad1_gennodejs.dir/rule
+
+.PHONY : Zad1_gennodejs
+
+# fast build rule for target.
+Zad1_gennodejs/fast:
+	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/Zad1_gennodejs.dir/build.make Zad1/CMakeFiles/Zad1_gennodejs.dir/build
+.PHONY : Zad1_gennodejs/fast
 
 src/gui.o: src/gui.cpp.o
 
@@ -965,33 +1190,6 @@ src/pub_node.cpp.s:
 	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/pub_node.dir/build.make Zad1/CMakeFiles/pub_node.dir/src/pub_node.cpp.s
 .PHONY : src/pub_node.cpp.s
 
-src/robot.o: src/robot.cpp.o
-
-.PHONY : src/robot.o
-
-# target to build an object file
-src/robot.cpp.o:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/pub_node.dir/build.make Zad1/CMakeFiles/pub_node.dir/src/robot.cpp.o
-.PHONY : src/robot.cpp.o
-
-src/robot.i: src/robot.cpp.i
-
-.PHONY : src/robot.i
-
-# target to preprocess a source file
-src/robot.cpp.i:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/pub_node.dir/build.make Zad1/CMakeFiles/pub_node.dir/src/robot.cpp.i
-.PHONY : src/robot.cpp.i
-
-src/robot.s: src/robot.cpp.s
-
-.PHONY : src/robot.s
-
-# target to generate assembly for a file
-src/robot.cpp.s:
-	cd /home/filip/catkin_ws2/build && $(MAKE) -f Zad1/CMakeFiles/pub_node.dir/build.make Zad1/CMakeFiles/pub_node.dir/src/robot.cpp.s
-.PHONY : src/robot.cpp.s
-
 src/trans.o: src/trans.cpp.o
 
 .PHONY : src/trans.o
@@ -1054,57 +1252,72 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... test"
-	@echo "... gui_node"
-	@echo "... Zad1_gennodejs"
-	@echo "... Zad1_generate_messages_nodejs"
-	@echo "... Zad1_generate_messages_eus"
-	@echo "... Zad1_genpy"
-	@echo "... Zad1_gencpp"
-	@echo "... Zad1_generate_messages_cpp"
-	@echo "... Zad1_genlisp"
-	@echo "... _Zad1_generate_messages_check_deps_Move"
-	@echo "... _Zad1_generate_messages_check_deps_Data"
-	@echo "... Zad1_generate_messages"
-	@echo "... tf_generate_messages_py"
-	@echo "... actionlib_generate_messages_py"
-	@echo "... actionlib_msgs_generate_messages_nodejs"
-	@echo "... geometry_msgs_generate_messages_nodejs"
-	@echo "... Zad1_generate_messages_lisp"
-	@echo "... tf2_msgs_generate_messages_py"
-	@echo "... geometry_msgs_generate_messages_cpp"
-	@echo "... edit_cache"
-	@echo "... tf_generate_messages_lisp"
-	@echo "... actionlib_msgs_generate_messages_eus"
-	@echo "... tf2_msgs_generate_messages_lisp"
-	@echo "... sensor_msgs_generate_messages_py"
-	@echo "... geometry_msgs_generate_messages_py"
-	@echo "... sensor_msgs_generate_messages_nodejs"
-	@echo "... sensor_msgs_generate_messages_lisp"
-	@echo "... tf_generate_messages_cpp"
-	@echo "... geometry_msgs_generate_messages_lisp"
-	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... trans_node"
-	@echo "... pub_node"
-	@echo "... sensor_msgs_generate_messages_eus"
-	@echo "... actionlib_generate_messages_lisp"
-	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... gui_node"
 	@echo "... tf_generate_messages_nodejs"
-	@echo "... rebuild_cache"
-	@echo "... Zad1_generate_messages_py"
-	@echo "... tf2_msgs_generate_messages_eus"
-	@echo "... actionlib_generate_messages_nodejs"
-	@echo "... actionlib_generate_messages_eus"
-	@echo "... actionlib_msgs_generate_messages_cpp"
-	@echo "... actionlib_msgs_generate_messages_lisp"
-	@echo "... Zad1_geneus"
+	@echo "... geometry_msgs_generate_messages_eus"
+	@echo "... std_srvs_generate_messages_nodejs"
+	@echo "... roscpp_generate_messages_eus"
+	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... actionlib_generate_messages_cpp"
 	@echo "... actionlib_msgs_generate_messages_py"
-	@echo "... tf_generate_messages_eus"
+	@echo "... Zad1_geneus"
+	@echo "... std_srvs_generate_messages_eus"
+	@echo "... roscpp_generate_messages_cpp"
+	@echo "... pub_node"
+	@echo "... roscpp_generate_messages_py"
+	@echo "... std_srvs_generate_messages_lisp"
+	@echo "... geometry_msgs_generate_messages_lisp"
+	@echo "... tf_generate_messages_cpp"
+	@echo "... roscpp_generate_messages_nodejs"
+	@echo "... Zad1_generate_messages_cpp"
+	@echo "... tf2_msgs_generate_messages_eus"
+	@echo "... sensor_msgs_generate_messages_py"
+	@echo "... edit_cache"
+	@echo "... sensor_msgs_generate_messages_nodejs"
+	@echo "... sensor_msgs_generate_messages_eus"
+	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... std_srvs_generate_messages_cpp"
 	@echo "... tf2_msgs_generate_messages_cpp"
+	@echo "... std_srvs_generate_messages_py"
+	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... tf_generate_messages_eus"
+	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... actionlib_msgs_generate_messages_eus"
+	@echo "... tf_generate_messages_lisp"
+	@echo "... Zad1_generate_messages_py"
+	@echo "... geometry_msgs_generate_messages_cpp"
+	@echo "... tf2_msgs_generate_messages_py"
+	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... Zad1_generate_messages_lisp"
+	@echo "... roscpp_generate_messages_lisp"
+	@echo "... actionlib_generate_messages_lisp"
+	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... actionlib_generate_messages_eus"
+	@echo "... actionlib_msgs_generate_messages_cpp"
+	@echo "... actionlib_generate_messages_nodejs"
+	@echo "... actionlib_generate_messages_py"
+	@echo "... tf2_msgs_generate_messages_lisp"
 	@echo "... tf2_msgs_generate_messages_nodejs"
+	@echo "... Zad1_generate_messages"
+	@echo "... install"
+	@echo "... _Zad1_generate_messages_check_deps_Data"
+	@echo "... tf_generate_messages_py"
+	@echo "... actionlib_msgs_generate_messages_nodejs"
+	@echo "... actionlib_msgs_generate_messages_lisp"
+	@echo "... _Zad1_generate_messages_check_deps_Move"
+	@echo "... rebuild_cache"
+	@echo "... Zad1_genlisp"
+	@echo "... Zad1_gencpp"
+	@echo "... geometry_msgs_generate_messages_py"
+	@echo "... Zad1_genpy"
+	@echo "... Zad1_generate_messages_eus"
+	@echo "... geometry_msgs_generate_messages_nodejs"
+	@echo "... Zad1_generate_messages_nodejs"
+	@echo "... Zad1_gennodejs"
 	@echo "... src/gui.o"
 	@echo "... src/gui.i"
 	@echo "... src/gui.s"
@@ -1117,9 +1330,6 @@ help:
 	@echo "... src/pub_node.o"
 	@echo "... src/pub_node.i"
 	@echo "... src/pub_node.s"
-	@echo "... src/robot.o"
-	@echo "... src/robot.i"
-	@echo "... src/robot.s"
 	@echo "... src/trans.o"
 	@echo "... src/trans.i"
 	@echo "... src/trans.s"

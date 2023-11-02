@@ -1,7 +1,4 @@
 #include "../include/Zad1/pub.h"
-//#include <sensor_msgs/JointState.h>
-//#include <Zad1/Move.h>
-//#include <rrm_msgs/Move.h>
 
 class Publisher;
 class Wrapper;
@@ -19,14 +16,8 @@ int main(int argc, char **argv)
     SrvAbsolut srv_abs(nh, wrapper_ptr);
     
     ros::Rate loop_rate(1);
-    
-    while (ros::ok())
-    {
-        pub_obj.update();
-        
-        loop_rate.sleep();
-        ros::spinOnce();
-    }
+
+    ros::spin();
 
     return 0;
 

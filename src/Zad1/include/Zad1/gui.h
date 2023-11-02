@@ -11,22 +11,43 @@
 #include <Zad1/Move.h>
 #include <rrm_msgs/Move.h>
 
-class Srv
+class SrvAbsolute
 {
     public:
-        Srv(ros::NodeHandle& nh);
-        ~Srv() = default;
+        SrvAbsolute(ros::NodeHandle& nh);
+        ~SrvAbsolute() = default;
 
         double input(const std::string& jointName);
 
         void input_absolute();
-        void input_relative();
         void jointStateCallback(const sensor_msgs::JointState::ConstPtr& msg);
 
         double get_input_absolute(double upper_limit, double lower_limit, const std::string& jointName);
-        double get_input_relative(double upper_limit, double lower_limit, const std::string& jointName, double joint);
-
         int input_type();
+    private:
+        ros::ServiceClient client_;
+        ros::NodeHandle nh_;
+        ros::Subscriber subscriber_;
+
+        double j1, j2, j3, j4, j5, j6;
+
+
+        const int joints = 6;
+        std::vector<double> positions;
+
+};
+
+class SrvRelative
+{
+    public:
+        SrvRelative(ros::NodeHandle& nh);
+        ~SrvRelative() = default;
+
+        void jointStateCallback(const sensor_msgs::JointState::ConstPtr& msg);
+        
+        double input(const std::string& jointName);
+        void input_relative();
+        
     private:
         ros::ServiceClient client_;
         ros::NodeHandle nh_;

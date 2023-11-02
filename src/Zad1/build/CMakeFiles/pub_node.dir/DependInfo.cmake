@@ -6,7 +6,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/filip/catkin_ws2/src/Zad1/src/pub.cpp" "/home/filip/catkin_ws2/src/Zad1/build/CMakeFiles/pub_node.dir/src/pub.cpp.o"
   "/home/filip/catkin_ws2/src/Zad1/src/pub_node.cpp" "/home/filip/catkin_ws2/src/Zad1/build/CMakeFiles/pub_node.dir/src/pub_node.cpp.o"
-  "/home/filip/catkin_ws2/src/Zad1/src/robot.cpp" "/home/filip/catkin_ws2/src/Zad1/build/CMakeFiles/pub_node.dir/src/robot.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

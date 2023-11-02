@@ -30,11 +30,6 @@
   "file": "/home/filip/catkin_ws2/src/Zad1/src/pub.cpp"
 },
 {
-  "directory": "/home/filip/catkin_ws2/src/Zad1/build",
-  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"Zad1\\\" -I/home/filip/catkin_ws2/src/Zad1/build/devel/include -I/home/filip/catkin_ws2/src/Zad1/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3  -g   -o CMakeFiles/pub_node.dir/src/robot.cpp.o -c /home/filip/catkin_ws2/src/Zad1/src/robot.cpp",
-  "file": "/home/filip/catkin_ws2/src/Zad1/src/robot.cpp"
-},
-{
   "directory": "/home/filip/catkin_ws2/src/Zad1/build/gtest/googlemock",
   "command": "/usr/bin/g++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -isystem /usr/src/googletest/googlemock/include -isystem /usr/src/googletest/googlemock -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest  -g -fPIC   -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -DGTEST_HAS_PTHREAD=1 -std=c++11 -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /usr/src/googletest/googlemock/src/gmock_main.cc",
   "file": "/usr/src/googletest/googlemock/src/gmock_main.cc"

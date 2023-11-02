@@ -143,7 +143,7 @@ include_directories(include
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-add_executable(pub_node src/pub_node.cpp src/pub.cpp src/robot.cpp)
+add_executable(pub_node src/pub_node.cpp src/pub.cpp src)
 add_executable(gui_node src/gui_node.cpp src/gui.cpp)
 add_executable(trans_node src/trans_node.cpp src/trans.cpp)
 

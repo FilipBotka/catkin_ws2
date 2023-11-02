@@ -610,407 +610,17 @@ _run_tests_acceptance_test_rrm_1/fast:
 .PHONY : _run_tests_acceptance_test_rrm_1/fast
 
 #=============================================================================
-# Target rules for targets named cv1_client
+# Target rules for targets named trans_node
 
 # Build rule for target.
-cv1_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cv1_client
-.PHONY : cv1_client
+trans_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 trans_node
+.PHONY : trans_node
 
 # fast build rule for target.
-cv1_client/fast:
-	$(MAKE) -f cv1/CMakeFiles/cv1_client.dir/build.make cv1/CMakeFiles/cv1_client.dir/build
-.PHONY : cv1_client/fast
-
-#=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_py
-
-# Build rule for target.
-rosgraph_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_py
-.PHONY : rosgraph_msgs_generate_messages_py
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_py/fast:
-	$(MAKE) -f cv1/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make cv1/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-.PHONY : rosgraph_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named roscpp_generate_messages_lisp
-
-# Build rule for target.
-roscpp_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_lisp
-.PHONY : roscpp_generate_messages_lisp
-
-# fast build rule for target.
-roscpp_generate_messages_lisp/fast:
-	$(MAKE) -f cv1/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make cv1/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-.PHONY : roscpp_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_eus
-
-# Build rule for target.
-rosgraph_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_eus
-.PHONY : rosgraph_msgs_generate_messages_eus
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_eus/fast:
-	$(MAKE) -f cv1/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make cv1/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-.PHONY : rosgraph_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_lisp
-
-# Build rule for target.
-rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_lisp
-.PHONY : rosgraph_msgs_generate_messages_lisp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f cv1/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make cv1/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named cv1_gencpp
-
-# Build rule for target.
-cv1_gencpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cv1_gencpp
-.PHONY : cv1_gencpp
-
-# fast build rule for target.
-cv1_gencpp/fast:
-	$(MAKE) -f cv1/CMakeFiles/cv1_gencpp.dir/build.make cv1/CMakeFiles/cv1_gencpp.dir/build
-.PHONY : cv1_gencpp/fast
-
-#=============================================================================
-# Target rules for targets named std_srvs_generate_messages_cpp
-
-# Build rule for target.
-std_srvs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_cpp
-.PHONY : std_srvs_generate_messages_cpp
-
-# fast build rule for target.
-std_srvs_generate_messages_cpp/fast:
-	$(MAKE) -f cv1/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make cv1/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
-.PHONY : std_srvs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named roscpp_generate_messages_cpp
-
-# Build rule for target.
-roscpp_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_cpp
-.PHONY : roscpp_generate_messages_cpp
-
-# fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	$(MAKE) -f cv1/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make cv1/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named roscpp_generate_messages_nodejs
-
-# Build rule for target.
-roscpp_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_nodejs
-.PHONY : roscpp_generate_messages_nodejs
-
-# fast build rule for target.
-roscpp_generate_messages_nodejs/fast:
-	$(MAKE) -f cv1/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make cv1/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
-.PHONY : roscpp_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named std_srvs_generate_messages_lisp
-
-# Build rule for target.
-std_srvs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_lisp
-.PHONY : std_srvs_generate_messages_lisp
-
-# fast build rule for target.
-std_srvs_generate_messages_lisp/fast:
-	$(MAKE) -f cv1/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make cv1/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
-.PHONY : std_srvs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named cv1_subscriber
-
-# Build rule for target.
-cv1_subscriber: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cv1_subscriber
-.PHONY : cv1_subscriber
-
-# fast build rule for target.
-cv1_subscriber/fast:
-	$(MAKE) -f cv1/CMakeFiles/cv1_subscriber.dir/build.make cv1/CMakeFiles/cv1_subscriber.dir/build
-.PHONY : cv1_subscriber/fast
-
-#=============================================================================
-# Target rules for targets named roscpp_generate_messages_py
-
-# Build rule for target.
-roscpp_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_py
-.PHONY : roscpp_generate_messages_py
-
-# fast build rule for target.
-roscpp_generate_messages_py/fast:
-	$(MAKE) -f cv1/CMakeFiles/roscpp_generate_messages_py.dir/build.make cv1/CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named cv1_genpy
-
-# Build rule for target.
-cv1_genpy: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cv1_genpy
-.PHONY : cv1_genpy
-
-# fast build rule for target.
-cv1_genpy/fast:
-	$(MAKE) -f cv1/CMakeFiles/cv1_genpy.dir/build.make cv1/CMakeFiles/cv1_genpy.dir/build
-.PHONY : cv1_genpy/fast
-
-#=============================================================================
-# Target rules for targets named cv1_node
-
-# Build rule for target.
-cv1_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cv1_node
-.PHONY : cv1_node
-
-# fast build rule for target.
-cv1_node/fast:
-	$(MAKE) -f cv1/CMakeFiles/cv1_node.dir/build.make cv1/CMakeFiles/cv1_node.dir/build
-.PHONY : cv1_node/fast
-
-#=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_nodejs
-
-# Build rule for target.
-rosgraph_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_nodejs
-.PHONY : rosgraph_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f cv1/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make cv1/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
-.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named std_srvs_generate_messages_nodejs
-
-# Build rule for target.
-std_srvs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_nodejs
-.PHONY : std_srvs_generate_messages_nodejs
-
-# fast build rule for target.
-std_srvs_generate_messages_nodejs/fast:
-	$(MAKE) -f cv1/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make cv1/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
-.PHONY : std_srvs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_cpp
-
-# Build rule for target.
-rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_cpp
-.PHONY : rosgraph_msgs_generate_messages_cpp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f cv1/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make cv1/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named cv1_generate_messages_lisp
-
-# Build rule for target.
-cv1_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cv1_generate_messages_lisp
-.PHONY : cv1_generate_messages_lisp
-
-# fast build rule for target.
-cv1_generate_messages_lisp/fast:
-	$(MAKE) -f cv1/CMakeFiles/cv1_generate_messages_lisp.dir/build.make cv1/CMakeFiles/cv1_generate_messages_lisp.dir/build
-.PHONY : cv1_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named std_srvs_generate_messages_py
-
-# Build rule for target.
-std_srvs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_py
-.PHONY : std_srvs_generate_messages_py
-
-# fast build rule for target.
-std_srvs_generate_messages_py/fast:
-	$(MAKE) -f cv1/CMakeFiles/std_srvs_generate_messages_py.dir/build.make cv1/CMakeFiles/std_srvs_generate_messages_py.dir/build
-.PHONY : std_srvs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named _cv1_generate_messages_check_deps_Move
-
-# Build rule for target.
-_cv1_generate_messages_check_deps_Move: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _cv1_generate_messages_check_deps_Move
-.PHONY : _cv1_generate_messages_check_deps_Move
-
-# fast build rule for target.
-_cv1_generate_messages_check_deps_Move/fast:
-	$(MAKE) -f cv1/CMakeFiles/_cv1_generate_messages_check_deps_Move.dir/build.make cv1/CMakeFiles/_cv1_generate_messages_check_deps_Move.dir/build
-.PHONY : _cv1_generate_messages_check_deps_Move/fast
-
-#=============================================================================
-# Target rules for targets named _cv1_generate_messages_check_deps_Data
-
-# Build rule for target.
-_cv1_generate_messages_check_deps_Data: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _cv1_generate_messages_check_deps_Data
-.PHONY : _cv1_generate_messages_check_deps_Data
-
-# fast build rule for target.
-_cv1_generate_messages_check_deps_Data/fast:
-	$(MAKE) -f cv1/CMakeFiles/_cv1_generate_messages_check_deps_Data.dir/build.make cv1/CMakeFiles/_cv1_generate_messages_check_deps_Data.dir/build
-.PHONY : _cv1_generate_messages_check_deps_Data/fast
-
-#=============================================================================
-# Target rules for targets named roscpp_generate_messages_eus
-
-# Build rule for target.
-roscpp_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_eus
-.PHONY : roscpp_generate_messages_eus
-
-# fast build rule for target.
-roscpp_generate_messages_eus/fast:
-	$(MAKE) -f cv1/CMakeFiles/roscpp_generate_messages_eus.dir/build.make cv1/CMakeFiles/roscpp_generate_messages_eus.dir/build
-.PHONY : roscpp_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named cv1_generate_messages_py
-
-# Build rule for target.
-cv1_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cv1_generate_messages_py
-.PHONY : cv1_generate_messages_py
-
-# fast build rule for target.
-cv1_generate_messages_py/fast:
-	$(MAKE) -f cv1/CMakeFiles/cv1_generate_messages_py.dir/build.make cv1/CMakeFiles/cv1_generate_messages_py.dir/build
-.PHONY : cv1_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named cv1_generate_messages
-
-# Build rule for target.
-cv1_generate_messages: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cv1_generate_messages
-.PHONY : cv1_generate_messages
-
-# fast build rule for target.
-cv1_generate_messages/fast:
-	$(MAKE) -f cv1/CMakeFiles/cv1_generate_messages.dir/build.make cv1/CMakeFiles/cv1_generate_messages.dir/build
-.PHONY : cv1_generate_messages/fast
-
-#=============================================================================
-# Target rules for targets named cv1_generate_messages_cpp
-
-# Build rule for target.
-cv1_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cv1_generate_messages_cpp
-.PHONY : cv1_generate_messages_cpp
-
-# fast build rule for target.
-cv1_generate_messages_cpp/fast:
-	$(MAKE) -f cv1/CMakeFiles/cv1_generate_messages_cpp.dir/build.make cv1/CMakeFiles/cv1_generate_messages_cpp.dir/build
-.PHONY : cv1_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named cv1_gennodejs
-
-# Build rule for target.
-cv1_gennodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cv1_gennodejs
-.PHONY : cv1_gennodejs
-
-# fast build rule for target.
-cv1_gennodejs/fast:
-	$(MAKE) -f cv1/CMakeFiles/cv1_gennodejs.dir/build.make cv1/CMakeFiles/cv1_gennodejs.dir/build
-.PHONY : cv1_gennodejs/fast
-
-#=============================================================================
-# Target rules for targets named cv1_generate_messages_eus
-
-# Build rule for target.
-cv1_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cv1_generate_messages_eus
-.PHONY : cv1_generate_messages_eus
-
-# fast build rule for target.
-cv1_generate_messages_eus/fast:
-	$(MAKE) -f cv1/CMakeFiles/cv1_generate_messages_eus.dir/build.make cv1/CMakeFiles/cv1_generate_messages_eus.dir/build
-.PHONY : cv1_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named std_srvs_generate_messages_eus
-
-# Build rule for target.
-std_srvs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_eus
-.PHONY : std_srvs_generate_messages_eus
-
-# fast build rule for target.
-std_srvs_generate_messages_eus/fast:
-	$(MAKE) -f cv1/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make cv1/CMakeFiles/std_srvs_generate_messages_eus.dir/build
-.PHONY : std_srvs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named cv1_generate_messages_nodejs
-
-# Build rule for target.
-cv1_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cv1_generate_messages_nodejs
-.PHONY : cv1_generate_messages_nodejs
-
-# fast build rule for target.
-cv1_generate_messages_nodejs/fast:
-	$(MAKE) -f cv1/CMakeFiles/cv1_generate_messages_nodejs.dir/build.make cv1/CMakeFiles/cv1_generate_messages_nodejs.dir/build
-.PHONY : cv1_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named cv1_geneus
-
-# Build rule for target.
-cv1_geneus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cv1_geneus
-.PHONY : cv1_geneus
-
-# fast build rule for target.
-cv1_geneus/fast:
-	$(MAKE) -f cv1/CMakeFiles/cv1_geneus.dir/build.make cv1/CMakeFiles/cv1_geneus.dir/build
-.PHONY : cv1_geneus/fast
-
-#=============================================================================
-# Target rules for targets named cv1_genlisp
-
-# Build rule for target.
-cv1_genlisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cv1_genlisp
-.PHONY : cv1_genlisp
-
-# fast build rule for target.
-cv1_genlisp/fast:
-	$(MAKE) -f cv1/CMakeFiles/cv1_genlisp.dir/build.make cv1/CMakeFiles/cv1_genlisp.dir/build
-.PHONY : cv1_genlisp/fast
+trans_node/fast:
+	$(MAKE) -f Zad1/CMakeFiles/trans_node.dir/build.make Zad1/CMakeFiles/trans_node.dir/build
+.PHONY : trans_node/fast
 
 #=============================================================================
 # Target rules for targets named gui_node
@@ -1026,342 +636,17 @@ gui_node/fast:
 .PHONY : gui_node/fast
 
 #=============================================================================
-# Target rules for targets named Zad1_gennodejs
+# Target rules for targets named tf_generate_messages_nodejs
 
 # Build rule for target.
-Zad1_gennodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Zad1_gennodejs
-.PHONY : Zad1_gennodejs
+tf_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_nodejs
+.PHONY : tf_generate_messages_nodejs
 
 # fast build rule for target.
-Zad1_gennodejs/fast:
-	$(MAKE) -f Zad1/CMakeFiles/Zad1_gennodejs.dir/build.make Zad1/CMakeFiles/Zad1_gennodejs.dir/build
-.PHONY : Zad1_gennodejs/fast
-
-#=============================================================================
-# Target rules for targets named Zad1_generate_messages_nodejs
-
-# Build rule for target.
-Zad1_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Zad1_generate_messages_nodejs
-.PHONY : Zad1_generate_messages_nodejs
-
-# fast build rule for target.
-Zad1_generate_messages_nodejs/fast:
-	$(MAKE) -f Zad1/CMakeFiles/Zad1_generate_messages_nodejs.dir/build.make Zad1/CMakeFiles/Zad1_generate_messages_nodejs.dir/build
-.PHONY : Zad1_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named Zad1_generate_messages_eus
-
-# Build rule for target.
-Zad1_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Zad1_generate_messages_eus
-.PHONY : Zad1_generate_messages_eus
-
-# fast build rule for target.
-Zad1_generate_messages_eus/fast:
-	$(MAKE) -f Zad1/CMakeFiles/Zad1_generate_messages_eus.dir/build.make Zad1/CMakeFiles/Zad1_generate_messages_eus.dir/build
-.PHONY : Zad1_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named Zad1_genpy
-
-# Build rule for target.
-Zad1_genpy: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Zad1_genpy
-.PHONY : Zad1_genpy
-
-# fast build rule for target.
-Zad1_genpy/fast:
-	$(MAKE) -f Zad1/CMakeFiles/Zad1_genpy.dir/build.make Zad1/CMakeFiles/Zad1_genpy.dir/build
-.PHONY : Zad1_genpy/fast
-
-#=============================================================================
-# Target rules for targets named Zad1_gencpp
-
-# Build rule for target.
-Zad1_gencpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Zad1_gencpp
-.PHONY : Zad1_gencpp
-
-# fast build rule for target.
-Zad1_gencpp/fast:
-	$(MAKE) -f Zad1/CMakeFiles/Zad1_gencpp.dir/build.make Zad1/CMakeFiles/Zad1_gencpp.dir/build
-.PHONY : Zad1_gencpp/fast
-
-#=============================================================================
-# Target rules for targets named Zad1_generate_messages_cpp
-
-# Build rule for target.
-Zad1_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Zad1_generate_messages_cpp
-.PHONY : Zad1_generate_messages_cpp
-
-# fast build rule for target.
-Zad1_generate_messages_cpp/fast:
-	$(MAKE) -f Zad1/CMakeFiles/Zad1_generate_messages_cpp.dir/build.make Zad1/CMakeFiles/Zad1_generate_messages_cpp.dir/build
-.PHONY : Zad1_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named Zad1_genlisp
-
-# Build rule for target.
-Zad1_genlisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Zad1_genlisp
-.PHONY : Zad1_genlisp
-
-# fast build rule for target.
-Zad1_genlisp/fast:
-	$(MAKE) -f Zad1/CMakeFiles/Zad1_genlisp.dir/build.make Zad1/CMakeFiles/Zad1_genlisp.dir/build
-.PHONY : Zad1_genlisp/fast
-
-#=============================================================================
-# Target rules for targets named _Zad1_generate_messages_check_deps_Move
-
-# Build rule for target.
-_Zad1_generate_messages_check_deps_Move: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _Zad1_generate_messages_check_deps_Move
-.PHONY : _Zad1_generate_messages_check_deps_Move
-
-# fast build rule for target.
-_Zad1_generate_messages_check_deps_Move/fast:
-	$(MAKE) -f Zad1/CMakeFiles/_Zad1_generate_messages_check_deps_Move.dir/build.make Zad1/CMakeFiles/_Zad1_generate_messages_check_deps_Move.dir/build
-.PHONY : _Zad1_generate_messages_check_deps_Move/fast
-
-#=============================================================================
-# Target rules for targets named _Zad1_generate_messages_check_deps_Data
-
-# Build rule for target.
-_Zad1_generate_messages_check_deps_Data: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _Zad1_generate_messages_check_deps_Data
-.PHONY : _Zad1_generate_messages_check_deps_Data
-
-# fast build rule for target.
-_Zad1_generate_messages_check_deps_Data/fast:
-	$(MAKE) -f Zad1/CMakeFiles/_Zad1_generate_messages_check_deps_Data.dir/build.make Zad1/CMakeFiles/_Zad1_generate_messages_check_deps_Data.dir/build
-.PHONY : _Zad1_generate_messages_check_deps_Data/fast
-
-#=============================================================================
-# Target rules for targets named Zad1_generate_messages
-
-# Build rule for target.
-Zad1_generate_messages: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Zad1_generate_messages
-.PHONY : Zad1_generate_messages
-
-# fast build rule for target.
-Zad1_generate_messages/fast:
-	$(MAKE) -f Zad1/CMakeFiles/Zad1_generate_messages.dir/build.make Zad1/CMakeFiles/Zad1_generate_messages.dir/build
-.PHONY : Zad1_generate_messages/fast
-
-#=============================================================================
-# Target rules for targets named tf_generate_messages_py
-
-# Build rule for target.
-tf_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_py
-.PHONY : tf_generate_messages_py
-
-# fast build rule for target.
-tf_generate_messages_py/fast:
-	$(MAKE) -f Zad1/CMakeFiles/tf_generate_messages_py.dir/build.make Zad1/CMakeFiles/tf_generate_messages_py.dir/build
-.PHONY : tf_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named actionlib_generate_messages_py
-
-# Build rule for target.
-actionlib_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_py
-.PHONY : actionlib_generate_messages_py
-
-# fast build rule for target.
-actionlib_generate_messages_py/fast:
-	$(MAKE) -f Zad1/CMakeFiles/actionlib_generate_messages_py.dir/build.make Zad1/CMakeFiles/actionlib_generate_messages_py.dir/build
-.PHONY : actionlib_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named actionlib_msgs_generate_messages_nodejs
-
-# Build rule for target.
-actionlib_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_nodejs
-.PHONY : actionlib_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f Zad1/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make Zad1/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
-.PHONY : actionlib_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named geometry_msgs_generate_messages_nodejs
-
-# Build rule for target.
-geometry_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_nodejs
-.PHONY : geometry_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-geometry_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f Zad1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make Zad1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
-.PHONY : geometry_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named Zad1_generate_messages_lisp
-
-# Build rule for target.
-Zad1_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Zad1_generate_messages_lisp
-.PHONY : Zad1_generate_messages_lisp
-
-# fast build rule for target.
-Zad1_generate_messages_lisp/fast:
-	$(MAKE) -f Zad1/CMakeFiles/Zad1_generate_messages_lisp.dir/build.make Zad1/CMakeFiles/Zad1_generate_messages_lisp.dir/build
-.PHONY : Zad1_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named tf2_msgs_generate_messages_py
-
-# Build rule for target.
-tf2_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_py
-.PHONY : tf2_msgs_generate_messages_py
-
-# fast build rule for target.
-tf2_msgs_generate_messages_py/fast:
-	$(MAKE) -f Zad1/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make Zad1/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
-.PHONY : tf2_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named geometry_msgs_generate_messages_cpp
-
-# Build rule for target.
-geometry_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_cpp
-.PHONY : geometry_msgs_generate_messages_cpp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f Zad1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make Zad1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
-.PHONY : geometry_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named tf_generate_messages_lisp
-
-# Build rule for target.
-tf_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_lisp
-.PHONY : tf_generate_messages_lisp
-
-# fast build rule for target.
-tf_generate_messages_lisp/fast:
-	$(MAKE) -f Zad1/CMakeFiles/tf_generate_messages_lisp.dir/build.make Zad1/CMakeFiles/tf_generate_messages_lisp.dir/build
-.PHONY : tf_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named actionlib_msgs_generate_messages_eus
-
-# Build rule for target.
-actionlib_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_eus
-.PHONY : actionlib_msgs_generate_messages_eus
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_eus/fast:
-	$(MAKE) -f Zad1/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make Zad1/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
-.PHONY : actionlib_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named tf2_msgs_generate_messages_lisp
-
-# Build rule for target.
-tf2_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_lisp
-.PHONY : tf2_msgs_generate_messages_lisp
-
-# fast build rule for target.
-tf2_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f Zad1/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make Zad1/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
-.PHONY : tf2_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named sensor_msgs_generate_messages_py
-
-# Build rule for target.
-sensor_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_py
-.PHONY : sensor_msgs_generate_messages_py
-
-# fast build rule for target.
-sensor_msgs_generate_messages_py/fast:
-	$(MAKE) -f Zad1/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make Zad1/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
-.PHONY : sensor_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named geometry_msgs_generate_messages_py
-
-# Build rule for target.
-geometry_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_py
-.PHONY : geometry_msgs_generate_messages_py
-
-# fast build rule for target.
-geometry_msgs_generate_messages_py/fast:
-	$(MAKE) -f Zad1/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make Zad1/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
-.PHONY : geometry_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named sensor_msgs_generate_messages_nodejs
-
-# Build rule for target.
-sensor_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_nodejs
-.PHONY : sensor_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-sensor_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f Zad1/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make Zad1/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
-.PHONY : sensor_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named sensor_msgs_generate_messages_lisp
-
-# Build rule for target.
-sensor_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_lisp
-.PHONY : sensor_msgs_generate_messages_lisp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f Zad1/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make Zad1/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
-.PHONY : sensor_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named tf_generate_messages_cpp
-
-# Build rule for target.
-tf_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_cpp
-.PHONY : tf_generate_messages_cpp
-
-# fast build rule for target.
-tf_generate_messages_cpp/fast:
-	$(MAKE) -f Zad1/CMakeFiles/tf_generate_messages_cpp.dir/build.make Zad1/CMakeFiles/tf_generate_messages_cpp.dir/build
-.PHONY : tf_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named geometry_msgs_generate_messages_lisp
-
-# Build rule for target.
-geometry_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_lisp
-.PHONY : geometry_msgs_generate_messages_lisp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f Zad1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make Zad1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
-.PHONY : geometry_msgs_generate_messages_lisp/fast
+tf_generate_messages_nodejs/fast:
+	$(MAKE) -f Zad1/CMakeFiles/tf_generate_messages_nodejs.dir/build.make Zad1/CMakeFiles/tf_generate_messages_nodejs.dir/build
+.PHONY : tf_generate_messages_nodejs/fast
 
 #=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_eus
@@ -1377,173 +662,43 @@ geometry_msgs_generate_messages_eus/fast:
 .PHONY : geometry_msgs_generate_messages_eus/fast
 
 #=============================================================================
-# Target rules for targets named trans_node
+# Target rules for targets named std_srvs_generate_messages_nodejs
 
 # Build rule for target.
-trans_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 trans_node
-.PHONY : trans_node
+std_srvs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_nodejs
+.PHONY : std_srvs_generate_messages_nodejs
 
 # fast build rule for target.
-trans_node/fast:
-	$(MAKE) -f Zad1/CMakeFiles/trans_node.dir/build.make Zad1/CMakeFiles/trans_node.dir/build
-.PHONY : trans_node/fast
+std_srvs_generate_messages_nodejs/fast:
+	$(MAKE) -f Zad1/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make Zad1/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
+.PHONY : std_srvs_generate_messages_nodejs/fast
 
 #=============================================================================
-# Target rules for targets named pub_node
+# Target rules for targets named roscpp_generate_messages_eus
 
 # Build rule for target.
-pub_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pub_node
-.PHONY : pub_node
+roscpp_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_eus
+.PHONY : roscpp_generate_messages_eus
 
 # fast build rule for target.
-pub_node/fast:
-	$(MAKE) -f Zad1/CMakeFiles/pub_node.dir/build.make Zad1/CMakeFiles/pub_node.dir/build
-.PHONY : pub_node/fast
+roscpp_generate_messages_eus/fast:
+	$(MAKE) -f Zad1/CMakeFiles/roscpp_generate_messages_eus.dir/build.make Zad1/CMakeFiles/roscpp_generate_messages_eus.dir/build
+.PHONY : roscpp_generate_messages_eus/fast
 
 #=============================================================================
-# Target rules for targets named sensor_msgs_generate_messages_eus
+# Target rules for targets named rosgraph_msgs_generate_messages_nodejs
 
 # Build rule for target.
-sensor_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_eus
-.PHONY : sensor_msgs_generate_messages_eus
+rosgraph_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_nodejs
+.PHONY : rosgraph_msgs_generate_messages_nodejs
 
 # fast build rule for target.
-sensor_msgs_generate_messages_eus/fast:
-	$(MAKE) -f Zad1/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make Zad1/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
-.PHONY : sensor_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named actionlib_generate_messages_lisp
-
-# Build rule for target.
-actionlib_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_lisp
-.PHONY : actionlib_generate_messages_lisp
-
-# fast build rule for target.
-actionlib_generate_messages_lisp/fast:
-	$(MAKE) -f Zad1/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make Zad1/CMakeFiles/actionlib_generate_messages_lisp.dir/build
-.PHONY : actionlib_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named sensor_msgs_generate_messages_cpp
-
-# Build rule for target.
-sensor_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_cpp
-.PHONY : sensor_msgs_generate_messages_cpp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f Zad1/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make Zad1/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
-.PHONY : sensor_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named tf_generate_messages_nodejs
-
-# Build rule for target.
-tf_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_nodejs
-.PHONY : tf_generate_messages_nodejs
-
-# fast build rule for target.
-tf_generate_messages_nodejs/fast:
-	$(MAKE) -f Zad1/CMakeFiles/tf_generate_messages_nodejs.dir/build.make Zad1/CMakeFiles/tf_generate_messages_nodejs.dir/build
-.PHONY : tf_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named Zad1_generate_messages_py
-
-# Build rule for target.
-Zad1_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Zad1_generate_messages_py
-.PHONY : Zad1_generate_messages_py
-
-# fast build rule for target.
-Zad1_generate_messages_py/fast:
-	$(MAKE) -f Zad1/CMakeFiles/Zad1_generate_messages_py.dir/build.make Zad1/CMakeFiles/Zad1_generate_messages_py.dir/build
-.PHONY : Zad1_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named tf2_msgs_generate_messages_eus
-
-# Build rule for target.
-tf2_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_eus
-.PHONY : tf2_msgs_generate_messages_eus
-
-# fast build rule for target.
-tf2_msgs_generate_messages_eus/fast:
-	$(MAKE) -f Zad1/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make Zad1/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
-.PHONY : tf2_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named actionlib_generate_messages_nodejs
-
-# Build rule for target.
-actionlib_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_nodejs
-.PHONY : actionlib_generate_messages_nodejs
-
-# fast build rule for target.
-actionlib_generate_messages_nodejs/fast:
-	$(MAKE) -f Zad1/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make Zad1/CMakeFiles/actionlib_generate_messages_nodejs.dir/build
-.PHONY : actionlib_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named actionlib_generate_messages_eus
-
-# Build rule for target.
-actionlib_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_eus
-.PHONY : actionlib_generate_messages_eus
-
-# fast build rule for target.
-actionlib_generate_messages_eus/fast:
-	$(MAKE) -f Zad1/CMakeFiles/actionlib_generate_messages_eus.dir/build.make Zad1/CMakeFiles/actionlib_generate_messages_eus.dir/build
-.PHONY : actionlib_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named actionlib_msgs_generate_messages_cpp
-
-# Build rule for target.
-actionlib_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_cpp
-.PHONY : actionlib_msgs_generate_messages_cpp
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f Zad1/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make Zad1/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
-.PHONY : actionlib_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named actionlib_msgs_generate_messages_lisp
-
-# Build rule for target.
-actionlib_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_lisp
-.PHONY : actionlib_msgs_generate_messages_lisp
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f Zad1/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make Zad1/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
-.PHONY : actionlib_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named Zad1_geneus
-
-# Build rule for target.
-Zad1_geneus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Zad1_geneus
-.PHONY : Zad1_geneus
-
-# fast build rule for target.
-Zad1_geneus/fast:
-	$(MAKE) -f Zad1/CMakeFiles/Zad1_geneus.dir/build.make Zad1/CMakeFiles/Zad1_geneus.dir/build
-.PHONY : Zad1_geneus/fast
+rosgraph_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f Zad1/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make Zad1/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
 # Target rules for targets named actionlib_generate_messages_cpp
@@ -1572,17 +727,212 @@ actionlib_msgs_generate_messages_py/fast:
 .PHONY : actionlib_msgs_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named tf_generate_messages_eus
+# Target rules for targets named Zad1_geneus
 
 # Build rule for target.
-tf_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_eus
-.PHONY : tf_generate_messages_eus
+Zad1_geneus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Zad1_geneus
+.PHONY : Zad1_geneus
 
 # fast build rule for target.
-tf_generate_messages_eus/fast:
-	$(MAKE) -f Zad1/CMakeFiles/tf_generate_messages_eus.dir/build.make Zad1/CMakeFiles/tf_generate_messages_eus.dir/build
-.PHONY : tf_generate_messages_eus/fast
+Zad1_geneus/fast:
+	$(MAKE) -f Zad1/CMakeFiles/Zad1_geneus.dir/build.make Zad1/CMakeFiles/Zad1_geneus.dir/build
+.PHONY : Zad1_geneus/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_eus
+
+# Build rule for target.
+std_srvs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_eus
+.PHONY : std_srvs_generate_messages_eus
+
+# fast build rule for target.
+std_srvs_generate_messages_eus/fast:
+	$(MAKE) -f Zad1/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make Zad1/CMakeFiles/std_srvs_generate_messages_eus.dir/build
+.PHONY : std_srvs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_cpp
+
+# Build rule for target.
+roscpp_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_cpp
+.PHONY : roscpp_generate_messages_cpp
+
+# fast build rule for target.
+roscpp_generate_messages_cpp/fast:
+	$(MAKE) -f Zad1/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make Zad1/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+.PHONY : roscpp_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named pub_node
+
+# Build rule for target.
+pub_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pub_node
+.PHONY : pub_node
+
+# fast build rule for target.
+pub_node/fast:
+	$(MAKE) -f Zad1/CMakeFiles/pub_node.dir/build.make Zad1/CMakeFiles/pub_node.dir/build
+.PHONY : pub_node/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_py
+
+# Build rule for target.
+roscpp_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_py
+.PHONY : roscpp_generate_messages_py
+
+# fast build rule for target.
+roscpp_generate_messages_py/fast:
+	$(MAKE) -f Zad1/CMakeFiles/roscpp_generate_messages_py.dir/build.make Zad1/CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_lisp
+
+# Build rule for target.
+std_srvs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_lisp
+.PHONY : std_srvs_generate_messages_lisp
+
+# fast build rule for target.
+std_srvs_generate_messages_lisp/fast:
+	$(MAKE) -f Zad1/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make Zad1/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
+.PHONY : std_srvs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_lisp
+
+# Build rule for target.
+geometry_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_lisp
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f Zad1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make Zad1/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+.PHONY : geometry_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named tf_generate_messages_cpp
+
+# Build rule for target.
+tf_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_cpp
+.PHONY : tf_generate_messages_cpp
+
+# fast build rule for target.
+tf_generate_messages_cpp/fast:
+	$(MAKE) -f Zad1/CMakeFiles/tf_generate_messages_cpp.dir/build.make Zad1/CMakeFiles/tf_generate_messages_cpp.dir/build
+.PHONY : tf_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_nodejs
+
+# Build rule for target.
+roscpp_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_nodejs
+.PHONY : roscpp_generate_messages_nodejs
+
+# fast build rule for target.
+roscpp_generate_messages_nodejs/fast:
+	$(MAKE) -f Zad1/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make Zad1/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+.PHONY : roscpp_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named Zad1_generate_messages_cpp
+
+# Build rule for target.
+Zad1_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Zad1_generate_messages_cpp
+.PHONY : Zad1_generate_messages_cpp
+
+# fast build rule for target.
+Zad1_generate_messages_cpp/fast:
+	$(MAKE) -f Zad1/CMakeFiles/Zad1_generate_messages_cpp.dir/build.make Zad1/CMakeFiles/Zad1_generate_messages_cpp.dir/build
+.PHONY : Zad1_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named tf2_msgs_generate_messages_eus
+
+# Build rule for target.
+tf2_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_eus
+.PHONY : tf2_msgs_generate_messages_eus
+
+# fast build rule for target.
+tf2_msgs_generate_messages_eus/fast:
+	$(MAKE) -f Zad1/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make Zad1/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
+.PHONY : tf2_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_py
+
+# Build rule for target.
+sensor_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_py
+.PHONY : sensor_msgs_generate_messages_py
+
+# fast build rule for target.
+sensor_msgs_generate_messages_py/fast:
+	$(MAKE) -f Zad1/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make Zad1/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+.PHONY : sensor_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_nodejs
+
+# Build rule for target.
+sensor_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_nodejs
+.PHONY : sensor_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+sensor_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f Zad1/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make Zad1/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+.PHONY : sensor_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_eus
+
+# Build rule for target.
+sensor_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_eus
+.PHONY : sensor_msgs_generate_messages_eus
+
+# fast build rule for target.
+sensor_msgs_generate_messages_eus/fast:
+	$(MAKE) -f Zad1/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make Zad1/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+.PHONY : sensor_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_lisp
+
+# Build rule for target.
+sensor_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_lisp
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f Zad1/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make Zad1/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+.PHONY : sensor_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_cpp
+
+# Build rule for target.
+std_srvs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_cpp
+.PHONY : std_srvs_generate_messages_cpp
+
+# fast build rule for target.
+std_srvs_generate_messages_cpp/fast:
+	$(MAKE) -f Zad1/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make Zad1/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
+.PHONY : std_srvs_generate_messages_cpp/fast
 
 #=============================================================================
 # Target rules for targets named tf2_msgs_generate_messages_cpp
@@ -1598,6 +948,266 @@ tf2_msgs_generate_messages_cpp/fast:
 .PHONY : tf2_msgs_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named std_srvs_generate_messages_py
+
+# Build rule for target.
+std_srvs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_py
+.PHONY : std_srvs_generate_messages_py
+
+# fast build rule for target.
+std_srvs_generate_messages_py/fast:
+	$(MAKE) -f Zad1/CMakeFiles/std_srvs_generate_messages_py.dir/build.make Zad1/CMakeFiles/std_srvs_generate_messages_py.dir/build
+.PHONY : std_srvs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_eus
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_eus
+.PHONY : rosgraph_msgs_generate_messages_eus
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_eus/fast:
+	$(MAKE) -f Zad1/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make Zad1/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+.PHONY : rosgraph_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named tf_generate_messages_eus
+
+# Build rule for target.
+tf_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_eus
+.PHONY : tf_generate_messages_eus
+
+# fast build rule for target.
+tf_generate_messages_eus/fast:
+	$(MAKE) -f Zad1/CMakeFiles/tf_generate_messages_eus.dir/build.make Zad1/CMakeFiles/tf_generate_messages_eus.dir/build
+.PHONY : tf_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_lisp
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_lisp
+.PHONY : rosgraph_msgs_generate_messages_lisp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f Zad1/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make Zad1/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_eus
+
+# Build rule for target.
+actionlib_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_eus
+.PHONY : actionlib_msgs_generate_messages_eus
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_eus/fast:
+	$(MAKE) -f Zad1/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make Zad1/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
+.PHONY : actionlib_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named tf_generate_messages_lisp
+
+# Build rule for target.
+tf_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_lisp
+.PHONY : tf_generate_messages_lisp
+
+# fast build rule for target.
+tf_generate_messages_lisp/fast:
+	$(MAKE) -f Zad1/CMakeFiles/tf_generate_messages_lisp.dir/build.make Zad1/CMakeFiles/tf_generate_messages_lisp.dir/build
+.PHONY : tf_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named Zad1_generate_messages_py
+
+# Build rule for target.
+Zad1_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Zad1_generate_messages_py
+.PHONY : Zad1_generate_messages_py
+
+# fast build rule for target.
+Zad1_generate_messages_py/fast:
+	$(MAKE) -f Zad1/CMakeFiles/Zad1_generate_messages_py.dir/build.make Zad1/CMakeFiles/Zad1_generate_messages_py.dir/build
+.PHONY : Zad1_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_cpp
+
+# Build rule for target.
+geometry_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_cpp
+.PHONY : geometry_msgs_generate_messages_cpp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f Zad1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make Zad1/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+.PHONY : geometry_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named tf2_msgs_generate_messages_py
+
+# Build rule for target.
+tf2_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_py
+.PHONY : tf2_msgs_generate_messages_py
+
+# fast build rule for target.
+tf2_msgs_generate_messages_py/fast:
+	$(MAKE) -f Zad1/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make Zad1/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
+.PHONY : tf2_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_cpp
+
+# Build rule for target.
+sensor_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_cpp
+.PHONY : sensor_msgs_generate_messages_cpp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f Zad1/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make Zad1/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+.PHONY : sensor_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named Zad1_generate_messages_lisp
+
+# Build rule for target.
+Zad1_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Zad1_generate_messages_lisp
+.PHONY : Zad1_generate_messages_lisp
+
+# fast build rule for target.
+Zad1_generate_messages_lisp/fast:
+	$(MAKE) -f Zad1/CMakeFiles/Zad1_generate_messages_lisp.dir/build.make Zad1/CMakeFiles/Zad1_generate_messages_lisp.dir/build
+.PHONY : Zad1_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_lisp
+
+# Build rule for target.
+roscpp_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_lisp
+.PHONY : roscpp_generate_messages_lisp
+
+# fast build rule for target.
+roscpp_generate_messages_lisp/fast:
+	$(MAKE) -f Zad1/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make Zad1/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+.PHONY : roscpp_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_lisp
+
+# Build rule for target.
+actionlib_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_lisp
+.PHONY : actionlib_generate_messages_lisp
+
+# fast build rule for target.
+actionlib_generate_messages_lisp/fast:
+	$(MAKE) -f Zad1/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make Zad1/CMakeFiles/actionlib_generate_messages_lisp.dir/build
+.PHONY : actionlib_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_py
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_py
+.PHONY : rosgraph_msgs_generate_messages_py
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_py/fast:
+	$(MAKE) -f Zad1/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make Zad1/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+.PHONY : rosgraph_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_cpp
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_cpp
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f Zad1/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make Zad1/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_eus
+
+# Build rule for target.
+actionlib_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_eus
+.PHONY : actionlib_generate_messages_eus
+
+# fast build rule for target.
+actionlib_generate_messages_eus/fast:
+	$(MAKE) -f Zad1/CMakeFiles/actionlib_generate_messages_eus.dir/build.make Zad1/CMakeFiles/actionlib_generate_messages_eus.dir/build
+.PHONY : actionlib_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_cpp
+
+# Build rule for target.
+actionlib_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_cpp
+.PHONY : actionlib_msgs_generate_messages_cpp
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f Zad1/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make Zad1/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
+.PHONY : actionlib_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_nodejs
+
+# Build rule for target.
+actionlib_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_nodejs
+.PHONY : actionlib_generate_messages_nodejs
+
+# fast build rule for target.
+actionlib_generate_messages_nodejs/fast:
+	$(MAKE) -f Zad1/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make Zad1/CMakeFiles/actionlib_generate_messages_nodejs.dir/build
+.PHONY : actionlib_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_py
+
+# Build rule for target.
+actionlib_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_py
+.PHONY : actionlib_generate_messages_py
+
+# fast build rule for target.
+actionlib_generate_messages_py/fast:
+	$(MAKE) -f Zad1/CMakeFiles/actionlib_generate_messages_py.dir/build.make Zad1/CMakeFiles/actionlib_generate_messages_py.dir/build
+.PHONY : actionlib_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named tf2_msgs_generate_messages_lisp
+
+# Build rule for target.
+tf2_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_lisp
+.PHONY : tf2_msgs_generate_messages_lisp
+
+# fast build rule for target.
+tf2_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f Zad1/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make Zad1/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
+.PHONY : tf2_msgs_generate_messages_lisp/fast
+
+#=============================================================================
 # Target rules for targets named tf2_msgs_generate_messages_nodejs
 
 # Build rule for target.
@@ -1609,6 +1219,188 @@ tf2_msgs_generate_messages_nodejs: cmake_check_build_system
 tf2_msgs_generate_messages_nodejs/fast:
 	$(MAKE) -f Zad1/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make Zad1/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
 .PHONY : tf2_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named Zad1_generate_messages
+
+# Build rule for target.
+Zad1_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Zad1_generate_messages
+.PHONY : Zad1_generate_messages
+
+# fast build rule for target.
+Zad1_generate_messages/fast:
+	$(MAKE) -f Zad1/CMakeFiles/Zad1_generate_messages.dir/build.make Zad1/CMakeFiles/Zad1_generate_messages.dir/build
+.PHONY : Zad1_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named _Zad1_generate_messages_check_deps_Data
+
+# Build rule for target.
+_Zad1_generate_messages_check_deps_Data: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _Zad1_generate_messages_check_deps_Data
+.PHONY : _Zad1_generate_messages_check_deps_Data
+
+# fast build rule for target.
+_Zad1_generate_messages_check_deps_Data/fast:
+	$(MAKE) -f Zad1/CMakeFiles/_Zad1_generate_messages_check_deps_Data.dir/build.make Zad1/CMakeFiles/_Zad1_generate_messages_check_deps_Data.dir/build
+.PHONY : _Zad1_generate_messages_check_deps_Data/fast
+
+#=============================================================================
+# Target rules for targets named tf_generate_messages_py
+
+# Build rule for target.
+tf_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_py
+.PHONY : tf_generate_messages_py
+
+# fast build rule for target.
+tf_generate_messages_py/fast:
+	$(MAKE) -f Zad1/CMakeFiles/tf_generate_messages_py.dir/build.make Zad1/CMakeFiles/tf_generate_messages_py.dir/build
+.PHONY : tf_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_nodejs
+
+# Build rule for target.
+actionlib_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_nodejs
+.PHONY : actionlib_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f Zad1/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make Zad1/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
+.PHONY : actionlib_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_lisp
+
+# Build rule for target.
+actionlib_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_lisp
+.PHONY : actionlib_msgs_generate_messages_lisp
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f Zad1/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make Zad1/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
+.PHONY : actionlib_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named _Zad1_generate_messages_check_deps_Move
+
+# Build rule for target.
+_Zad1_generate_messages_check_deps_Move: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _Zad1_generate_messages_check_deps_Move
+.PHONY : _Zad1_generate_messages_check_deps_Move
+
+# fast build rule for target.
+_Zad1_generate_messages_check_deps_Move/fast:
+	$(MAKE) -f Zad1/CMakeFiles/_Zad1_generate_messages_check_deps_Move.dir/build.make Zad1/CMakeFiles/_Zad1_generate_messages_check_deps_Move.dir/build
+.PHONY : _Zad1_generate_messages_check_deps_Move/fast
+
+#=============================================================================
+# Target rules for targets named Zad1_genlisp
+
+# Build rule for target.
+Zad1_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Zad1_genlisp
+.PHONY : Zad1_genlisp
+
+# fast build rule for target.
+Zad1_genlisp/fast:
+	$(MAKE) -f Zad1/CMakeFiles/Zad1_genlisp.dir/build.make Zad1/CMakeFiles/Zad1_genlisp.dir/build
+.PHONY : Zad1_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named Zad1_gencpp
+
+# Build rule for target.
+Zad1_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Zad1_gencpp
+.PHONY : Zad1_gencpp
+
+# fast build rule for target.
+Zad1_gencpp/fast:
+	$(MAKE) -f Zad1/CMakeFiles/Zad1_gencpp.dir/build.make Zad1/CMakeFiles/Zad1_gencpp.dir/build
+.PHONY : Zad1_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_py
+
+# Build rule for target.
+geometry_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_py
+.PHONY : geometry_msgs_generate_messages_py
+
+# fast build rule for target.
+geometry_msgs_generate_messages_py/fast:
+	$(MAKE) -f Zad1/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make Zad1/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+.PHONY : geometry_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named Zad1_genpy
+
+# Build rule for target.
+Zad1_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Zad1_genpy
+.PHONY : Zad1_genpy
+
+# fast build rule for target.
+Zad1_genpy/fast:
+	$(MAKE) -f Zad1/CMakeFiles/Zad1_genpy.dir/build.make Zad1/CMakeFiles/Zad1_genpy.dir/build
+.PHONY : Zad1_genpy/fast
+
+#=============================================================================
+# Target rules for targets named Zad1_generate_messages_eus
+
+# Build rule for target.
+Zad1_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Zad1_generate_messages_eus
+.PHONY : Zad1_generate_messages_eus
+
+# fast build rule for target.
+Zad1_generate_messages_eus/fast:
+	$(MAKE) -f Zad1/CMakeFiles/Zad1_generate_messages_eus.dir/build.make Zad1/CMakeFiles/Zad1_generate_messages_eus.dir/build
+.PHONY : Zad1_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_nodejs
+
+# Build rule for target.
+geometry_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_nodejs
+.PHONY : geometry_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+geometry_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f Zad1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make Zad1/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+.PHONY : geometry_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named Zad1_generate_messages_nodejs
+
+# Build rule for target.
+Zad1_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Zad1_generate_messages_nodejs
+.PHONY : Zad1_generate_messages_nodejs
+
+# fast build rule for target.
+Zad1_generate_messages_nodejs/fast:
+	$(MAKE) -f Zad1/CMakeFiles/Zad1_generate_messages_nodejs.dir/build.make Zad1/CMakeFiles/Zad1_generate_messages_nodejs.dir/build
+.PHONY : Zad1_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named Zad1_gennodejs
+
+# Build rule for target.
+Zad1_gennodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Zad1_gennodejs
+.PHONY : Zad1_gennodejs
+
+# fast build rule for target.
+Zad1_gennodejs/fast:
+	$(MAKE) -f Zad1/CMakeFiles/Zad1_gennodejs.dir/build.make Zad1/CMakeFiles/Zad1_gennodejs.dir/build
+.PHONY : Zad1_gennodejs/fast
 
 # Help Target
 help:
@@ -1657,83 +1449,67 @@ help:
 	@echo "... _run_tests_acceptance_test_rrm_1_rostest_test_rrm1.test"
 	@echo "... clean_test_results_acceptance_test_rrm_1"
 	@echo "... _run_tests_acceptance_test_rrm_1"
-	@echo "... cv1_client"
-	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... roscpp_generate_messages_lisp"
-	@echo "... rosgraph_msgs_generate_messages_eus"
-	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... cv1_gencpp"
-	@echo "... std_srvs_generate_messages_cpp"
-	@echo "... roscpp_generate_messages_cpp"
-	@echo "... roscpp_generate_messages_nodejs"
-	@echo "... std_srvs_generate_messages_lisp"
-	@echo "... cv1_subscriber"
-	@echo "... roscpp_generate_messages_py"
-	@echo "... cv1_genpy"
-	@echo "... cv1_node"
-	@echo "... rosgraph_msgs_generate_messages_nodejs"
-	@echo "... std_srvs_generate_messages_nodejs"
-	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... cv1_generate_messages_lisp"
-	@echo "... std_srvs_generate_messages_py"
-	@echo "... _cv1_generate_messages_check_deps_Move"
-	@echo "... _cv1_generate_messages_check_deps_Data"
-	@echo "... roscpp_generate_messages_eus"
-	@echo "... cv1_generate_messages_py"
-	@echo "... cv1_generate_messages"
-	@echo "... cv1_generate_messages_cpp"
-	@echo "... cv1_gennodejs"
-	@echo "... cv1_generate_messages_eus"
-	@echo "... std_srvs_generate_messages_eus"
-	@echo "... cv1_generate_messages_nodejs"
-	@echo "... cv1_geneus"
-	@echo "... cv1_genlisp"
-	@echo "... gui_node"
-	@echo "... Zad1_gennodejs"
-	@echo "... Zad1_generate_messages_nodejs"
-	@echo "... Zad1_generate_messages_eus"
-	@echo "... Zad1_genpy"
-	@echo "... Zad1_gencpp"
-	@echo "... Zad1_generate_messages_cpp"
-	@echo "... Zad1_genlisp"
-	@echo "... _Zad1_generate_messages_check_deps_Move"
-	@echo "... _Zad1_generate_messages_check_deps_Data"
-	@echo "... Zad1_generate_messages"
-	@echo "... tf_generate_messages_py"
-	@echo "... actionlib_generate_messages_py"
-	@echo "... actionlib_msgs_generate_messages_nodejs"
-	@echo "... geometry_msgs_generate_messages_nodejs"
-	@echo "... Zad1_generate_messages_lisp"
-	@echo "... tf2_msgs_generate_messages_py"
-	@echo "... geometry_msgs_generate_messages_cpp"
-	@echo "... tf_generate_messages_lisp"
-	@echo "... actionlib_msgs_generate_messages_eus"
-	@echo "... tf2_msgs_generate_messages_lisp"
-	@echo "... sensor_msgs_generate_messages_py"
-	@echo "... geometry_msgs_generate_messages_py"
-	@echo "... sensor_msgs_generate_messages_nodejs"
-	@echo "... sensor_msgs_generate_messages_lisp"
-	@echo "... tf_generate_messages_cpp"
-	@echo "... geometry_msgs_generate_messages_lisp"
-	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... trans_node"
-	@echo "... pub_node"
-	@echo "... sensor_msgs_generate_messages_eus"
-	@echo "... actionlib_generate_messages_lisp"
-	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... gui_node"
 	@echo "... tf_generate_messages_nodejs"
-	@echo "... Zad1_generate_messages_py"
-	@echo "... tf2_msgs_generate_messages_eus"
-	@echo "... actionlib_generate_messages_nodejs"
-	@echo "... actionlib_generate_messages_eus"
-	@echo "... actionlib_msgs_generate_messages_cpp"
-	@echo "... actionlib_msgs_generate_messages_lisp"
-	@echo "... Zad1_geneus"
+	@echo "... geometry_msgs_generate_messages_eus"
+	@echo "... std_srvs_generate_messages_nodejs"
+	@echo "... roscpp_generate_messages_eus"
+	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... actionlib_generate_messages_cpp"
 	@echo "... actionlib_msgs_generate_messages_py"
-	@echo "... tf_generate_messages_eus"
+	@echo "... Zad1_geneus"
+	@echo "... std_srvs_generate_messages_eus"
+	@echo "... roscpp_generate_messages_cpp"
+	@echo "... pub_node"
+	@echo "... roscpp_generate_messages_py"
+	@echo "... std_srvs_generate_messages_lisp"
+	@echo "... geometry_msgs_generate_messages_lisp"
+	@echo "... tf_generate_messages_cpp"
+	@echo "... roscpp_generate_messages_nodejs"
+	@echo "... Zad1_generate_messages_cpp"
+	@echo "... tf2_msgs_generate_messages_eus"
+	@echo "... sensor_msgs_generate_messages_py"
+	@echo "... sensor_msgs_generate_messages_nodejs"
+	@echo "... sensor_msgs_generate_messages_eus"
+	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... std_srvs_generate_messages_cpp"
 	@echo "... tf2_msgs_generate_messages_cpp"
+	@echo "... std_srvs_generate_messages_py"
+	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... tf_generate_messages_eus"
+	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... actionlib_msgs_generate_messages_eus"
+	@echo "... tf_generate_messages_lisp"
+	@echo "... Zad1_generate_messages_py"
+	@echo "... geometry_msgs_generate_messages_cpp"
+	@echo "... tf2_msgs_generate_messages_py"
+	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... Zad1_generate_messages_lisp"
+	@echo "... roscpp_generate_messages_lisp"
+	@echo "... actionlib_generate_messages_lisp"
+	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... actionlib_generate_messages_eus"
+	@echo "... actionlib_msgs_generate_messages_cpp"
+	@echo "... actionlib_generate_messages_nodejs"
+	@echo "... actionlib_generate_messages_py"
+	@echo "... tf2_msgs_generate_messages_lisp"
 	@echo "... tf2_msgs_generate_messages_nodejs"
+	@echo "... Zad1_generate_messages"
+	@echo "... _Zad1_generate_messages_check_deps_Data"
+	@echo "... tf_generate_messages_py"
+	@echo "... actionlib_msgs_generate_messages_nodejs"
+	@echo "... actionlib_msgs_generate_messages_lisp"
+	@echo "... _Zad1_generate_messages_check_deps_Move"
+	@echo "... Zad1_genlisp"
+	@echo "... Zad1_gencpp"
+	@echo "... geometry_msgs_generate_messages_py"
+	@echo "... Zad1_genpy"
+	@echo "... Zad1_generate_messages_eus"
+	@echo "... geometry_msgs_generate_messages_nodejs"
+	@echo "... Zad1_generate_messages_nodejs"
+	@echo "... Zad1_gennodejs"
 .PHONY : help
 
 

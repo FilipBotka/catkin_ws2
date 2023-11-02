@@ -134,7 +134,6 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/filip/catkin_ws2/build/rrm_simple_robot_model/cmake_install.cmake")
   include("/home/filip/catkin_ws2/build/rrm_msgs/cmake_install.cmake")
   include("/home/filip/catkin_ws2/build/acceptance_test_rrm_1/cmake_install.cmake")
-  include("/home/filip/catkin_ws2/build/cv1/cmake_install.cmake")
   include("/home/filip/catkin_ws2/build/Zad1/cmake_install.cmake")
 
 endif()

@@ -75,8 +75,10 @@ tf/transform_broadcaster.h
 -
 tf_conversions/tf_eigen.h
 -
+thread
+-
 
-/home/filip/catkin_ws2/src/Zad1/src/trans.cpp
+/home/filip/catkin_ws2/src/Zad1/src/trans_node.cpp
 ../include/Zad1/trans.h
 /home/filip/catkin_ws2/src/Zad1/include/Zad1/trans.h
 

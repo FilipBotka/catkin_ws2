@@ -1,2 +1,2 @@
-Zad1:acceptance_test_rrm_1:cv1:rrm_msgs:rrm_simple_robot_model
+Zad1:acceptance_test_rrm_1:rrm_msgs:rrm_simple_robot_model
 -DCATKIN_DEVEL_PREFIX=/home/filip/catkin_ws2/devel -DCMAKE_INSTALL_PREFIX=/home/filip/catkin_ws2/install -G Unix Makefiles

@@ -1263,33 +1263,6 @@ src/pub_node.cpp.s:
 	$(MAKE) -f CMakeFiles/pub_node.dir/build.make CMakeFiles/pub_node.dir/src/pub_node.cpp.s
 .PHONY : src/pub_node.cpp.s
 
-src/robot.o: src/robot.cpp.o
-
-.PHONY : src/robot.o
-
-# target to build an object file
-src/robot.cpp.o:
-	$(MAKE) -f CMakeFiles/pub_node.dir/build.make CMakeFiles/pub_node.dir/src/robot.cpp.o
-.PHONY : src/robot.cpp.o
-
-src/robot.i: src/robot.cpp.i
-
-.PHONY : src/robot.i
-
-# target to preprocess a source file
-src/robot.cpp.i:
-	$(MAKE) -f CMakeFiles/pub_node.dir/build.make CMakeFiles/pub_node.dir/src/robot.cpp.i
-.PHONY : src/robot.cpp.i
-
-src/robot.s: src/robot.cpp.s
-
-.PHONY : src/robot.s
-
-# target to generate assembly for a file
-src/robot.cpp.s:
-	$(MAKE) -f CMakeFiles/pub_node.dir/build.make CMakeFiles/pub_node.dir/src/robot.cpp.s
-.PHONY : src/robot.cpp.s
-
 src/trans.o: src/trans.cpp.o
 
 .PHONY : src/trans.o
@@ -1445,9 +1418,6 @@ help:
 	@echo "... src/pub_node.o"
 	@echo "... src/pub_node.i"
 	@echo "... src/pub_node.s"
-	@echo "... src/robot.o"
-	@echo "... src/robot.i"
-	@echo "... src/robot.s"
 	@echo "... src/trans.o"
 	@echo "... src/trans.i"
 	@echo "... src/trans.s"

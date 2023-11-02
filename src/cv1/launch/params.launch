@@ -1,4 +1,0 @@
-<launch>
-    <rosparam command="load" file="$(find cv1)/config/params.yaml"/>
-    
-</launch>
